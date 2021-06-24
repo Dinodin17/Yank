@@ -354,18 +354,44 @@ body {
   height: 100vh;
 }
 
+.benefits__wrap {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .benefits__title {
   font-family: 'Play';
   font-size: 40px;
   color: white;
+  width: 50%;
+  text-transform: uppercase;
+}
+
+.benefits__title-delay {
+  width: 37%;
 }
 
 .benefits__list {
-  width: 40%;
-  float: right;
+  margin-top: 25px;
+  width: 37%;
 }
 
 .benefits__item {
+  margin-bottom: 25px;
   font-size: 20px;
   color: white;
+}
+
+.benefits__subtitle {
+  font-weight: 900;
 }
