@@ -288,6 +288,11 @@ body {
   height: 100vh;
 }
 
+.banner__button {
+  position: absolute;
+  left: 60%;
+}
+
 .slider {
   max-width: 55%;
   margin: 0 auto;
@@ -331,15 +336,15 @@ body {
   padding: 7px 20px 9px;
   background: #6dd14e;
   font-family: 'Play';
-  font-size: 32px;
+  font-size: 38px;
   color: #000000;
-  position: absolute;
-  left: 60%;
 }
 
 .benefits {
   background-color: black;
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   position: relative;
 }
 
@@ -351,7 +356,8 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  height: 100vh;
+  height: 100%;
+  z-index: 0;
 }
 
 .benefits__wrap {
@@ -370,8 +376,9 @@ body {
 }
 
 .benefits__title {
+  z-index: 100;
   font-family: 'Play';
-  font-size: 40px;
+  font-size: 50px;
   color: white;
   width: 50%;
   text-transform: uppercase;
@@ -387,11 +394,273 @@ body {
 }
 
 .benefits__item {
-  margin-bottom: 25px;
-  font-size: 20px;
+  margin-bottom: 27px;
+  font-size: 25px;
   color: white;
 }
 
 .benefits__subtitle {
   font-weight: 900;
+}
+
+.benefits__button {
+  position: absolute;
+  left: 2%;
+  bottom: 2%;
+}
+
+.about {
+  height: 90vh;
+  padding: 20px 0 20px;
+}
+
+.about__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about__subtitle {
+  font-weight: 900;
+  font-size: 20px;
+  color: black;
+}
+
+.about__description {
+  font-size: 18px;
+}
+
+.left {
+  width: 35%;
+  text-align: right;
+}
+
+.about-img {
+  margin: 7% 30px 0;
+  height: 90%;
+}
+
+.about .site-width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.search {
+  height: 100vh;
+  width: 100%;
+  background: url(../images/фон3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search__description {
+  margin: 0 auto;
+  font-size: 25px;
+  width: 50%;
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.search__button {
+  margin-top: 40px;
+}
+
+.stages {
+  height: 10vh;
+  background-color: white;
+}
+
+.information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url(../images/фон4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.information__wrap {
+  width: 60%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-left: 10%;
+}
+
+.title {
+  font-size: 50px;
+  color: white;
+  font-family: 'Play';
+}
+
+.description {
+  font-size: 20px;
+  color: white;
+}
+
+.yank {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../images/yank.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 280px;
+}
+
+.auctions {
+  height: 100vh;
+  background: white;
+  position: relative;
+}
+
+.auctions__item {
+  position: absolute;
+}
+
+.auctions__title {
+  font-size: 45px;
+  color: white;
+  position: absolute;
+  bottom: 25%;
+  right: 10%;
+}
+
+.auctions__title2 {
+  bottom: 50%;
+  right: 10%;
+  margin-bottom: 7%;
+}
+
+.auctions__title3 {
+  bottom: 50%;
+  right: 10%;
+  margin-bottom: 10%;
+}
+
+.auctions__title4 {
+  top: 50%;
+  left: 10%;
+  margin-top: 7%;
+}
+
+.auctions__title5 {
+  top: 50%;
+  left: 10%;
+  margin-top: 7%;
+}
+
+.auctions__item1 {
+  width: 75%;
+  border-top: 130px solid #000a00;
+  top: 10%;
+  left: 0;
+  border-left: 0 solid transparent;
+  border-right: 80px solid transparent;
+}
+
+.auctions__item2 {
+  width: 53%;
+  border-top: 130px solid #000a00;
+  top: 40%;
+  left: 0;
+  border-left: 0 solid transparent;
+  border-right: 80px solid transparent;
+}
+
+.auctions__item3 {
+  width: 45%;
+  border-top: 130px solid #000a00;
+  top: 70%;
+  left: 0;
+  border-left: 0 solid transparent;
+  border-right: 80px solid transparent;
+}
+
+.auctions__item4 {
+  width: 53%;
+  border-bottom: 130px solid #000a00;
+  top: 50%;
+  right: 0;
+  border-right: 0 solid transparent;
+  border-left: 80px solid transparent;
+}
+
+.auctions__item5 {
+  width: 61%;
+  border-bottom: 130px solid #000a00;
+  top: 80%;
+  right: 0;
+  border-right: 0 solid transparent;
+  border-left: 80px solid transparent;
+}
+
+.auctions__image {
+  height: 60px;
+  width: auto;
+  position: absolute;
+}
+
+.auctions__image2 {
+  bottom: 50%;
+  right: 50%;
+  margin-bottom: 7%;
+}
+
+.auctions__image3 {
+  bottom: 50%;
+  right: 50%;
+  margin-bottom: 7%;
+}
+
+.auctions__image4 {
+  top: 50%;
+  left: 50%;
+  margin-top: 7%;
+}
+
+.auctions__image5 {
+  top: 50%;
+  left: 50%;
+  margin-top: 7%;
+  height: 45px;
+}
+
+.bold {
+  font-family: 'Play';
+  font-size: 60px;
+}
+
+.item__title {
+  font-size: 36px;
+  color: white;
+  position: absolute;
 }
