@@ -547,7 +547,7 @@ body {
 }
 
 .auctions__title {
-  font-size: 45px;
+  font-size: 47px;
   color: white;
   position: absolute;
   bottom: 25%;
@@ -656,7 +656,8 @@ body {
 
 .bold {
   font-family: 'Play';
-  font-size: 60px;
+  font-size: 50px;
+  text-transform: uppercase;
 }
 
 .item__title {
@@ -668,39 +669,160 @@ body {
 .social {
   height: 100vh;
   position: relative;
+  width: 100%;
 }
 
 .social__title {
-  margin-top: 140px;
+  margin: 140px 0 40px 50px;
   font-family: 'Play';
   font-size: 50px;
   color: black;
 }
 
+.social__subtitle {
+  font-size: 36px;
+  color: red;
+}
+
+.social__title-wrap {
+  z-index: 400;
+}
+
 .social__background1 {
-  width: 53%;
-  border-bottom: 430px solid black;
-  top: 40%;
+  z-index: 0;
+  position: absolute;
+  width: 38%;
+  height: 260px;
+  top: 58%;
   left: 0;
-  border-left: 0 solid transparent;
-  border-right: 150px solid transparent;
+  -webkit-clip-path: polygon(0 0, 78% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 78% 0%, 100% 100%, 0% 100%);
+}
+
+.social__background2 {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+  z-index: 0;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  width: 60%;
+  height: 260px;
+}
+
+.social__title-wrap {
+  position: absolute;
+  right: 20%;
+  top: 20%;
 }
 
 .inst-description {
   font-size: 26px;
-  width: 40%;
+  width: 30%;
+  margin-left: 50px;
+}
+
+.telegram-description {
+  font-size: 26px;
+  width: 35%;
+  position: absolute;
+  right: 50px;
+  top: 75%;
 }
 
 .img-wrap {
-  -webkit-clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
-  width: 40%;
+  z-index: 1;
+  -webkit-clip-path: polygon(0 0, 77% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 77% 0%, 100% 100%, 0% 100%);
+  width: 34%;
+  height: 260px;
+  position: absolute;
+  left: 0;
+  top: 55%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .img-wrap2 {
-  -webkit-clip-path: polygon(0 23%, 100% 23%, 100% 87%, 21% 87%);
-  clip-path: polygon(0 23%, 100% 23%, 100% 87%, 21% 87%);
+  z-index: 1;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 15%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 60%;
+  height: 260px;
+}
+
+.salon {
+  margin-top: 70px;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.salon__wrap {
+  height: 87%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.salon__title {
+  padding: 50px 0 40px;
+  font-family: 'Play';
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.salon__description {
+  padding-bottom: 40px;
+  color: #ffffff;
+  font-size: 22px;
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.salon__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.salon__item {
+  width: 250px;
+}
+
+.salon__image {
+  width: 250px;
+  height: 230px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.salon__subtitle {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: right;
+}
+
+.salon__price {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: right;
 }
