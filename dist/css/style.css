@@ -70,7 +70,9 @@ input {
 }
 
 button:active,
-button:focus {
+button:focus,
+textarea:active,
+textarea:focus {
   outline: none !important;
 }
 
@@ -194,7 +196,7 @@ body {
 }
 
 .site-width {
-  max-width: 95%;
+  max-width: 94%;
   margin: 0 auto;
 }
 
@@ -758,7 +760,7 @@ body {
 
 .salon {
   margin-top: 70px;
-  height: 100vh;
+  height: 110vh;
   background-color: #000000;
 }
 
@@ -825,4 +827,167 @@ body {
   color: #ffffff;
   font-size: 20px;
   text-align: right;
+}
+
+.contact {
+  height: 80vh;
+}
+
+.contact__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.contact__content2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.contact__wrap1 {
+  background-color: black;
+  width: 60%;
+}
+
+.contact__title {
+  font-size: 46px;
+  color: white;
+  font-family: 'Play';
+  margin: 40px 0 50px;
+}
+
+.contact__forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 250px;
+  margin-right: 60px;
+}
+
+.contact__wrap2 {
+  width: 40%;
+}
+
+.contact__button {
+  margin-top: 20px;
+  font-size: 28px;
+}
+
+.contact__subtitle {
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-size: 50px;
+  font-family: 'Play';
+  color: #636260;
+  top: 50%;
+  left: -13%;
+}
+
+.contact__item {
+  text-align: center;
+  color: #636260;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.contact__icon {
+  color: black;
+  font-size: 36px;
+  margin-right: 15px;
+}
+
+.contact-link {
+  color: #636260;
+  font-size: 22px;
+}
+
+.contact__forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__item {
+  height: 30px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.form__textarea {
+  width: 350px;
+  height: 100px;
+  resize: none;
+}
+
+.footer__list {
+  height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  color: black;
+}
+
+.footer__link {
+  font-size: 18px;
+  color: black;
+}
+
+.footer__icon {
+  font-size: 18px;
+  color: black;
+  margin-right: 9px;
 }
