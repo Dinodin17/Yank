@@ -589,7 +589,7 @@ body {
 
 .auctions__item2 {
   width: 53%;
-  border-top: 130px solid #000a00;
+  border-top: 130px solid black;
   top: 40%;
   left: 0;
   border-left: 0 solid transparent;
@@ -663,4 +663,44 @@ body {
   font-size: 36px;
   color: white;
   position: absolute;
+}
+
+.social {
+  height: 100vh;
+  position: relative;
+}
+
+.social__title {
+  margin-top: 140px;
+  font-family: 'Play';
+  font-size: 50px;
+  color: black;
+}
+
+.social__background1 {
+  width: 53%;
+  border-bottom: 430px solid black;
+  top: 40%;
+  left: 0;
+  border-left: 0 solid transparent;
+  border-right: 150px solid transparent;
+}
+
+.inst-description {
+  font-size: 26px;
+  width: 40%;
+}
+
+.img-wrap {
+  -webkit-clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+  width: 40%;
+}
+
+.img-wrap2 {
+  -webkit-clip-path: polygon(0 23%, 100% 23%, 100% 87%, 21% 87%);
+  clip-path: polygon(0 23%, 100% 23%, 100% 87%, 21% 87%);
+  position: absolute;
+  right: 0;
+  top: 50%;
 }
