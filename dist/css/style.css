@@ -542,6 +542,7 @@ body {
   height: 100vh;
   background: white;
   position: relative;
+  overflow: hidden;
 }
 
 .auctions__item {
@@ -683,10 +684,7 @@ body {
 
 .social__subtitle {
   font-size: 36px;
-  color: red;
-}
-
-.social__title-wrap {
+  color: #fafafa;
   z-index: 400;
 }
 
@@ -762,6 +760,7 @@ body {
   margin-top: 70px;
   height: 110vh;
   background-color: #000000;
+  overflow: hidden;
 }
 
 .salon__wrap {
@@ -831,6 +830,7 @@ body {
 
 .contact {
   height: 80vh;
+  overflow: hidden;
 }
 
 .contact__content {
@@ -949,12 +949,14 @@ body {
 }
 
 .form__item {
+  padding-left: 3px;
   height: 30px;
   margin-bottom: 20px;
   border-radius: 2px;
 }
 
 .form__textarea {
+  padding-left: 3px;
   width: 350px;
   height: 100px;
   resize: none;
