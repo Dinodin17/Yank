@@ -250,18 +250,18 @@ body {
   transition: all 0.3s ease 0s;
 }
 
-.contact {
+.header__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 16px;
 }
 
-.contact__item {
+.header__contact-item {
   margin-right: 25px;
 }
 
-.contact__link {
+.header__contact__link {
   color: #737373;
 }
 
@@ -492,8 +492,109 @@ body {
 }
 
 .stages {
-  height: 10vh;
+  height: 100vh;
+  position: relative;
+  width: 100%;
   background-color: white;
+}
+
+.stages__slider {
+  position: absolute;
+  top: 30%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.stages__inner {
+  width: 50%;
+}
+
+.stages__item {
+  width: 100%;
+  height: 100%;
+}
+
+.stages__img {
+  width: 40%;
+  height: 20%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.stages__wrap {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stages__title {
+  font-family: 'Play';
+  font-size: 46px;
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.stages__description {
+  font-size: 18px;
+  color: black;
+}
+
+.stages__dots {
+  width: 70%;
+  left: 15%;
+  height: 130px;
+  background-color: black;
+  position: absolute;
+  top: -10%;
+  border-radius: 4px;
+}
+
+.slick-dots {
+  width: 100%;
+  left: 0;
+  height: 120px;
+  background-color: black;
+  position: absolute;
+  border-radius: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -115%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+.slick-dots button {
+  background: #ffffff;
+  border: none;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+  outline: none;
+  font-size: 0;
+}
+
+.gocar {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+  top: 7%;
 }
 
 .information {
@@ -686,6 +787,32 @@ body {
   font-size: 36px;
   color: #fafafa;
   z-index: 400;
+  font-family: 'Play';
+}
+
+.social .inst__subtitle {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 35%;
+  padding-right: 40px;
+  text-align: right;
+  height: 60px;
+  top: 91%;
+  left: 0;
+  -webkit-clip-path: polygon(0 0, 94% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 94% 0%, 100% 100%, 0% 100%);
+}
+
+.social .tel__subtitle {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 3% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 3% 100%);
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 53%;
+  height: 60px;
+  padding-left: 40px;
 }
 
 .social__background1 {
@@ -708,12 +835,6 @@ body {
   top: 20%;
   width: 60%;
   height: 260px;
-}
-
-.social__title-wrap {
-  position: absolute;
-  right: 20%;
-  top: 20%;
 }
 
 .inst-description {

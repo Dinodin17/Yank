@@ -80,3 +80,33 @@ var cbpAnimatedHeader = (function() {
     init();
 
 })();
+
+$(function (){
+	$('.stages__slider').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		centerMode: true,
+		centerPadding: '1px',
+        fade: true,
+        cssEase: 'linear',
+        speed: 900,
+        autoplay: true,
+        autoplaySpeed: 20000,
+        dots: true,
+        dotsClass: 'slick-dots',
+		// responsive: [
+		// 	{
+		// 	breakpoint: 768,
+		// 	settings: {
+		// 	centerMode: false,
+		// 	arrows: false,
+		// 	slidesToShow: 3,
+		// 	vertical: true,
+		// 	verticalSwiping: true
+		// 	}
+		// 	},
+		// ]
+	});
+});
