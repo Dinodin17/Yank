@@ -1,50 +1,5 @@
-
-// анимация заголовков
-
-
-
-// const slider = $(".slider");
-
-// slider.on('wheel', (function(e) {
-//   e.preventDefault();
-
-//   if (e.originalEvent.deltaY < 0) {
-//     $(this).slick('slickNext');
-//   } else {
-//     $(this).slick('slickPrev');
-//   }
-// }));
-
-
-// $(function (){
-// 	$('.slider').slick({
-// 		infinite: true,
-// 		slidesToShow: 1,
-// 		slidesToScroll: 1,
-// 		arrows: true,
-// 		centerMode: true,
-// 		centerPadding: '1px',
-// 		ariableWidth: true,
-//         fade: true,
-//         cssEase: 'linear',
-//         speed: 300,
-//         autoplay: true,
-//         autoplaySpeed: 20000,
-// 		// responsive: [
-// 		// 	{
-// 		// 	breakpoint: 768,
-// 		// 	settings: {
-// 		// 	centerMode: false,
-// 		// 	arrows: false,
-// 		// 	slidesToShow: 3,
-// 		// 	vertical: true,
-// 		// 	verticalSwiping: true
-// 		// 	}
-// 		// 	},
-// 		// ]
-// 	});
-// });
-
+//---------------------------------------------------
+// уменьшение хэдэра на скролл
 var cbpAnimatedHeader = (function() {
 
     var docElem = document.documentElement,
@@ -80,57 +35,9 @@ var cbpAnimatedHeader = (function() {
     init();
 
 })();
-
-// $(function (){
-// 	$('.stages__slider').slick({
-// 		infinite: true,
-// 		slidesToShow: 1,
-// 		slidesToScroll: 1,
-// 		arrows: false,
-// 		centerMode: true,
-// 		centerPadding: '1px',
-//         fade: true,
-//         cssEase: 'linear',
-//         speed: 900,
-//         autoplay: true,
-//         autoplaySpeed: 20000,
-//         dots: true,
-//         dotsClass: 'slick-dots',
-// 		// responsive: [
-// 		// 	{
-// 		// 	breakpoint: 768,
-// 		// 	settings: {
-// 		// 	centerMode: false,
-// 		// 	arrows: false,
-// 		// 	slidesToShow: 3,
-// 		// 	vertical: true,
-// 		// 	verticalSwiping: true
-// 		// 	}
-// 		// 	},
-// 		// ]
-// 	});
-// });
-
-
-
-const swiper = new Swiper('.stages-slider',    {
-    // Optional parameters
-    direction: 'vertical',
-    autoplay: {
-        delay: 20000,
-        stopOnLastSlide: false,
-      },
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  parallax: true,
-speed:2000,
-    
-  });
-
-  const banner = new Swiper('.slider',    {
+//------------------------------------------------------------------------
+ //Главный слайдер с машинами
+ const banner = new Swiper('.slider',    {
     // Optional parameters
 
     // If we need pagination
@@ -149,3 +56,107 @@ speed:2000,
          
       }
   });
+//--------------------------------------------------------------
+// Слайдер "Как работает Янк?"
+const swiper = new Swiper('.stages-slider',    {
+    
+    direction: 'vertical',
+    autoplay: {
+        delay: 20000,
+        stopOnLastSlide: false,
+      },
+   
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  parallax: true,
+speed:2000,
+    
+  });
+
+
+  //----------------------------------------------
+  //Кнопки активные/неактывные
+
+var greenBut = document.querySelectorAll(".button");
+
+[].forEach.call(greenBut ,function(el){
+    el.addEventListener('click', function (e) {
+        el.classList.add('active');
+    })
+});
+
+var green = document.querySelectorAll(".green");
+[].forEach.call(green ,function(el){
+    el.addEventListener('click', function (e) {
+        el.classList.add('active-link');
+    })
+});
+
+const screenWidth = window.screen.width;
+console.log(screenWidth);
+
+
+let header_burger = document.querySelector('.header_burger');
+let header_menu = document.querySelector('.header__wrap');
+
+let back = document.querySelector('body');
+let header_list = document.querySelector('.nav');
+
+header_burger.onclick = function () {
+    header_burger.classList.toggle('active_m');
+    header_menu.classList.toggle('active_m');
+   
+    back.classList.toggle('lock');
+}
+header_list.onclick = function () {
+    header_list.classList.remove('active_m');
+  
+    header_burger.classList.remove('active_m');
+    header_menu.classList.remove('active_m');
+   
+    back.classList.remove('lock');
+}
+
+const aboutItem = document.querySelectorAll('.about__item');
+if ($(window).width() <= '800'){
+            
+            [].forEach.call(aboutItem, function(el) {
+                el.classList.add("swiper-slide");
+            });
+
+            const swiper_about = new Swiper('.about-swiper', {
+    
+                autoplay: {
+                    delay: 10000,
+                   
+                  },
+                parallax: true,
+                speed:2000,
+                loop: true,
+                
+              });
+
+              const swiper_about_bottom = new Swiper('.about-swiper-bottom', {
+    
+               
+                autoplay: {
+                    delay: 7000,
+                    stopOnLastSlide: false,
+                  },
+                parallax: true,
+                speed:2000,
+                loop: true,
+                
+              });
+    
+  } else{
+    [].forEach.call(aboutItem, function(el) {
+        el.classList.remove("swiper-slide");
+    });
+
+  }
+
+  var b = document.querySelector('.banner__button').offsetWidth;
+  console.log(b);
