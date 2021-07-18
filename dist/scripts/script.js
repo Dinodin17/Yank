@@ -1,5 +1,7 @@
 //---------------------------------------------------
 // уменьшение хэдэра на скролл
+var b = document.querySelector('.admin__title').offsetHeight;
+console.log(b);
 if ($(window).width() > '799'){
     var cbpAnimatedHeader = (function() {
 
@@ -168,5 +170,3 @@ if ($(window).width() <= '800'){
 
   }
 
-  var b = document.querySelector('.benefits__button').offsetWidth;
-  console.log(b);

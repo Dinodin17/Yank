@@ -1224,6 +1224,168 @@ body {
   background-color: #96d382;
 }
 
+.admin-autosalon {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.admin-autosalon__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin-autosalon__table-wrap {
+  width: 80%;
+  margin-top: 40px;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.admin-autosalon__table {
+  table-layout: fixed;
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.admin-autosalon__table-title {
+  text-align: left;
+  color: #a7a8a7;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.admin-autosalon__table-list {
+  border-bottom: 1px solid #a9aaa9;
+}
+
+.admin-autosalon__table-img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.admin-autosalon__table-item {
+  padding: 17px 0 17px;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+}
+
+.admin-autosalon__table-item-but {
+  text-align: center;
+}
+
+.admin-autosalon__table-button {
+  font-size: 22px;
+  color: #6dd14e;
+}
+
+.admin-autosalon__table-head th:nth-child(1) {
+  width: 17%;
+}
+
+.admin-autosalon__table-head th:nth-child(2) {
+  width: 23%;
+}
+
+.admin-autosalon__table-head th:nth-child(3) {
+  width: 15%;
+}
+
+.admin-autosalon__table-head th:nth-child(4) {
+  width: 17%;
+}
+
+.admin-autosalon__table-head th:nth-child(5) {
+  width: 28%;
+}
+
+.admin-header {
+  width: 97%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+}
+
+.admin-header__logo {
+  height: 65px;
+  width: 55px;
+}
+
+.admin__title {
+  text-align: center;
+  font-family: 'Play';
+  font-size: 40px;
+}
+
+.admin__header-log {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin__side-panel {
+  width: 20%;
+}
+
+.side-panel__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.side-panel__item {
+  border-radius: 2px;
+  width: 70%;
+  height: 32px;
+  background-color: #eeeeee;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.side-panel__link {
+  font-size: 18px;
+  color: black;
+}
+
+.side-panel__button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.side-panel__logout {
+  border-radius: 2px;
+  padding: 5px 19px 6px;
+  background-color: #eeeeee;
+  color: #6dd14e;
+  font-family: 'Play';
+  font-size: 30px;
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 321px) {
   /* стили */
 }
