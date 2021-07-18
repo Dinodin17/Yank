@@ -111,8 +111,8 @@ textarea:focus {
 
 @font-face {
   font-family: 'MyriadPro-Bold';
-  src: url("/fonts/MyriadPro-Bold.eot");
-  src: url("/fonts/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/MyriadPro-Bold.woff2") format("woff2"), url("/fonts/MyriadPro-Bold.woff") format("woff"), url("/fonts/MyriadPro-Bold.ttf") format("truetype"), url("/fonts/MyriadPro-Bold.svg#MyriadPro-Bold") format("svg");
+  src: url("../fonts/MyriadPro-Bold.eot");
+  src: url("../fonts/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Bold.woff2") format("woff2"), url("../fonts/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro-Bold.ttf") format("truetype"), url("../fonts/MyriadPro-Bold.svg#MyriadPro-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -120,8 +120,8 @@ textarea:focus {
 
 @font-face {
   font-family: 'Play';
-  src: url("/fonts/Play-Bold.eot");
-  src: url("/fonts/Play-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Play-Bold.woff2") format("woff2"), url("/fonts/Play-Bold.woff") format("woff"), url("/fonts/Play-Bold.ttf") format("truetype"), url("/fonts/Play-Bold.svg#Play-Bold") format("svg");
+  src: url("../fonts/Play-Bold.eot");
+  src: url("../fonts/Play-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Play-Bold.woff2") format("woff2"), url("../fonts/Play-Bold.woff") format("woff"), url("../fonts/Play-Bold.ttf") format("truetype"), url("../fonts/Play-Bold.svg#Play-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -129,8 +129,8 @@ textarea:focus {
 
 @font-face {
   font-family: 'Myriad Pro';
-  src: url("/fonts/MyriadPro-Regular.eot");
-  src: url("/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/MyriadPro-Regular.woff2") format("woff2"), url("/fonts/MyriadPro-Regular.woff") format("woff"), url("/fonts/MyriadPro-Regular.ttf") format("truetype"), url("/fonts/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
+  src: url("../fonts/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype"), url("../fonts/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -138,8 +138,8 @@ textarea:focus {
 
 @font-face {
   font-family: 'icons';
-  src: url("/fonts/icons.eot?fbzjg0");
-  src: url("/fonts/icons.eot?fbzjg0#iefix") format("embedded-opentype"), url("/fonts/icons.ttf?fbzjg0") format("truetype"), url("/fonts/icons.woff?fbzjg0") format("woff"), url("/fonts/icons.svg?fbzjg0#icons") format("svg");
+  src: url("../fonts/icons.eot?fbzjg0");
+  src: url("../fonts/icons.eot?fbzjg0#iefix") format("embedded-opentype"), url("../fonts/icons.ttf?fbzjg0") format("truetype"), url("../fonts/icons.woff?fbzjg0") format("woff"), url("../fonts/icons.svg?fbzjg0#icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1162,6 +1162,67 @@ body {
 /* Настольные компьютеры и ноутбуки ----------- */
 
 /* Большие экраны ----------- */
+
+.admin-enter {
+  height: 100%;
+  width: 100%;
+}
+
+.admin-enter__logo {
+  height: 13vh;
+  width: 8vh;
+  margin: 3vh 5vh 0;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.admin-enter__wrapper {
+  max-width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 58%;
+  margin: 3vh auto 0;
+}
+
+.admin-enter__title {
+  font-family: 'Play';
+  font-size: 43px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.admin-enter__input {
+  padding: 0 10px 3px;
+  width: 100%;
+  height: 43px;
+  background-color: #eeeeee;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.admin-enter__button {
+  width: 200px;
+  height: 43px;
+  background-color: #6dd14e;
+  font-family: 'Play';
+  font-size: 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.admin-enter__button:hover {
+  background-color: #96d382;
+}
 
 @media only screen and (min-width: 321px) {
   /* стили */
