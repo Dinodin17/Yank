@@ -1,40 +1,42 @@
 //---------------------------------------------------
 // уменьшение хэдэра на скролл
-var cbpAnimatedHeader = (function() {
+if ($(window).width() > '799'){
+    var cbpAnimatedHeader = (function() {
 
-    var docElem = document.documentElement,
-        header = document.querySelector( '.header' ),
-        didScroll = false,
-        changeHeaderOn = 100;
-        
+        var docElem = document.documentElement,
+            header = document.querySelector( '.header' ),
+            didScroll = false,
+            changeHeaderOn = 100;
+            
 
-    function init() {
-        window.addEventListener( 'scroll', function( event ) {
-            if( !didScroll ) {
-                didScroll = true;
-                setTimeout( scrollPage, 100 );
+        function init() {
+            window.addEventListener( 'scroll', function( event ) {
+                if( !didScroll ) {
+                    didScroll = true;
+                    setTimeout( scrollPage, 100 );
+                }
+            }, false );
+        }
+
+        function scrollPage() {
+            var sy = scrollY();
+            if ( sy >= changeHeaderOn ) {
+                header.classList.add('header-shrink' );
             }
-        }, false );
-    }
-
-    function scrollPage() {
-        var sy = scrollY();
-        if ( sy >= changeHeaderOn ) {
-            header.classList.add('header-shrink' );
+            else {
+                header.classList.remove('header-shrink' );
+            }
+            didScroll = false;
         }
-        else {
-            header.classList.remove('header-shrink' );
+
+        function scrollY() {
+            return window.pageYOffset || docElem.scrollTop;
         }
-        didScroll = false;
-    }
 
-    function scrollY() {
-        return window.pageYOffset || docElem.scrollTop;
-    }
+        init();
 
-    init();
-
-})();
+    })();
+} 
 //------------------------------------------------------------------------
  //Главный слайдер с машинами
  const banner = new Swiper('.slider',    {
@@ -60,7 +62,15 @@ var cbpAnimatedHeader = (function() {
 // Слайдер "Как работает Янк?"
 const swiper = new Swiper('.stages-slider',    {
     
-    direction: 'vertical',
+   
+
+    breakpoints: {
+        // when window width is >= 320px
+        767: {
+            direction: 'vertical',
+        },
+    },
+    
     autoplay: {
         delay: 20000,
         stopOnLastSlide: false,
@@ -70,9 +80,9 @@ const swiper = new Swiper('.stages-slider',    {
       el: '.swiper-pagination',
       clickable: true,
     },
-  parallax: true,
-speed:2000,
-    
+    parallax: true,
+    speed:2000,
+      
   });
 
 
@@ -158,5 +168,5 @@ if ($(window).width() <= '800'){
 
   }
 
-  var b = document.querySelector('.banner__button').offsetWidth;
+  var b = document.querySelector('.benefits__button').offsetWidth;
   console.log(b);
