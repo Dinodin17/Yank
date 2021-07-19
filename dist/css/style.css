@@ -1386,6 +1386,97 @@ body {
   cursor: pointer;
 }
 
+.admin-auto-in-work {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.admin-auto-in-work__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin-auto-in-work__table-wrap {
+  width: 80%;
+  margin-top: 40px;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.admin-auto-in-work__table {
+  table-layout: fixed;
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.admin-auto-in-work__table-head {
+  text-align: left;
+  color: #a7a8a7;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.admin-auto-in-work__table-list {
+  border-bottom: 1px solid #a9aaa9;
+}
+
+.admin-auto-in-work__table-item {
+  padding: 17px 0 17px;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+}
+
+.admin-auto-in-work__table-item-but {
+  text-align: center;
+}
+
+.admin-auto-in-work__table-button {
+  font-size: 22px;
+  color: #6dd14e;
+}
+
+.admin-auto-in-work__button-add {
+  width: 97%;
+  text-align: right;
+}
+
+.admin-auto-in-work__button-add a {
+  border-radius: 2px;
+  padding: 5px 19px 6px;
+  background-color: #eeeeee;
+  color: #6dd14e;
+  font-family: 'Play';
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.admin-auto-in-work__table-head th:nth-child(1) {
+  width: 14%;
+}
+
+.admin-auto-in-work__table-head th:nth-child(2) {
+  width: 16%;
+}
+
+.admin-auto-in-work__table-head th:nth-child(3) {
+  width: 16%;
+}
+
+.admin-auto-in-work__table-head th:nth-child(4) {
+  width: 16%;
+}
+
+.admin-auto-in-work__table-head th:nth-child(5) {
+  width: 15%;
+}
+
+.admin-auto-in-work__table-head th:nth-child(5) {
+  width: 16%;
+}
+
 @media only screen and (min-width: 321px) {
   /* стили */
 }
