@@ -1477,6 +1477,58 @@ body {
   width: 16%;
 }
 
+.admin-orders {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.admin-orders__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin-orders__table-wrap {
+  width: 80%;
+  margin-top: 40px;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.admin-orders__table {
+  table-layout: fixed;
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.admin-orders__table-head {
+  text-align: left;
+  color: #a7a8a7;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.admin-orders__table-list {
+  border-bottom: 1px solid #a9aaa9;
+}
+
+.admin-orders__table-item {
+  padding: 17px 0 17px;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+}
+
+.admin-orders__table-item-but {
+  text-align: center;
+}
+
+.admin-orders__table-button {
+  font-size: 22px;
+  color: #6dd14e;
+}
+
 @media only screen and (min-width: 321px) {
   /* стили */
 }
