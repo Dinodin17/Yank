@@ -1,5 +1,6 @@
 //---------------------------------------------------
 // уменьшение хэдэра на скролл
+
 var b = document.querySelector('.admin__title').offsetHeight;
 console.log(b);
 if ($(window).width() > '799'){
@@ -170,3 +171,11 @@ if ($(window).width() <= '800'){
 
   }
 
+  
+  /*
+  Reference: http://jsfiddle.net/BB3JK/47/
+  */
+  
+
+  
+  

@@ -1441,6 +1441,8 @@ body {
 .admin-auto-in-work__button-add {
   width: 97%;
   text-align: right;
+  position: absolute;
+  top: 100px;
 }
 
 .admin-auto-in-work__button-add a {
@@ -1449,7 +1451,7 @@ body {
   background-color: #eeeeee;
   color: #6dd14e;
   font-family: 'Play';
-  font-size: 30px;
+  font-size: 28px;
   cursor: pointer;
 }
 
@@ -1527,6 +1529,150 @@ body {
 .admin-orders__table-button {
   font-size: 22px;
   color: #6dd14e;
+}
+
+.admin-all-users {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.admin-all-users__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin-all-users__table-wrap {
+  width: 80%;
+  margin-top: 40px;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.admin-all-users__table {
+  table-layout: fixed;
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.admin-all-users__table-head {
+  text-align: left;
+  color: #a7a8a7;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.admin-all-users__table-list {
+  border-bottom: 1px solid #a9aaa9;
+}
+
+.admin-all-users__table-item {
+  padding: 17px 0 17px;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+}
+
+.admin-all-users__table-item-but {
+  text-align: center;
+}
+
+.admin-all-users__table-button {
+  font-size: 22px;
+  color: #6dd14e;
+}
+
+.admin-all-users__button-add {
+  width: 97%;
+  text-align: right;
+  position: absolute;
+  top: 100px;
+}
+
+.admin-all-users__button-add a {
+  border-radius: 2px;
+  padding: 5px 19px 6px;
+  background-color: #eeeeee;
+  color: #6dd14e;
+  font-family: 'Play';
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.admin-my-account {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.admin-my-account__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin-my-account__wrapper-side {
+  width: 80%;
+  margin-top: 40px;
+  height: 70vh;
+}
+
+.admin-my-account__wrapper-side > div {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+.admin-my-account__item {
+  margin-bottom: 20px;
+}
+
+.admin-my-account__subtitle {
+  font-size: 20px;
+  color: #9e9e9e;
+}
+
+.admin-my-account__value {
+  padding-left: 10px;
+  font-size: 26px;
+  color: #000000;
+}
+
+.admin-my-account__button-edit a {
+  border-radius: 2px;
+  padding: 5px 19px 6px;
+  background-color: #6dd14e;
+  color: #000000;
+  font-family: 'Play';
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.admin-my-account__button-edit {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+}
+
+.admin-my-account-edit__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 350px;
+}
+
+.admin-my-account-edit__input {
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 4px 0 3px 10px;
+  height: 35px;
+  margin-bottom: 25px;
+  background-color: #eeeeee;
 }
 
 @media only screen and (min-width: 321px) {
