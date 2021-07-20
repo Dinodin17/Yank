@@ -1272,6 +1272,7 @@ body {
   font-size: 20px;
   color: black;
   text-align: left;
+  word-wrap: break-word;
 }
 
 .admin-autosalon__table-item-but {
@@ -1427,6 +1428,7 @@ body {
   font-size: 20px;
   color: black;
   text-align: left;
+  word-wrap: break-word;
 }
 
 .admin-auto-in-work__table-item-but {
@@ -1520,6 +1522,7 @@ body {
   font-size: 20px;
   color: black;
   text-align: left;
+  word-wrap: break-word;
 }
 
 .admin-orders__table-item-but {
@@ -1572,6 +1575,7 @@ body {
   font-size: 20px;
   color: black;
   text-align: left;
+  word-wrap: break-word;
 }
 
 .admin-all-users__table-item-but {
@@ -1635,7 +1639,7 @@ body {
 
 .admin-my-account__value {
   padding-left: 10px;
-  font-size: 26px;
+  font-size: 24px;
   color: #000000;
 }
 
@@ -1673,6 +1677,248 @@ body {
   height: 35px;
   margin-bottom: 25px;
   background-color: #eeeeee;
+}
+
+.crm-request {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.crm-request__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.crm-request__table-wrap {
+  width: 80%;
+  margin-top: 40px;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.crm-request__table {
+  table-layout: fixed;
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.crm-request__table-title {
+  text-align: left;
+  color: #a7a8a7;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.crm-request__table-list {
+  border-bottom: 1px solid #a9aaa9;
+}
+
+.crm-request__table-item {
+  padding: 17px 0 17px;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+}
+
+.crm-request__table-item-but {
+  text-align: center;
+}
+
+.crm-request__table-button {
+  font-size: 22px;
+  color: #6dd14e;
+}
+
+.crm-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 25%;
+}
+
+.crm-button {
+  border-radius: 2px;
+  padding: 5px 19px 6px;
+  background-color: #eeeeee;
+  color: #6dd14e;
+  font-family: 'Play';
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.crm-lead {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.crm-lead__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.crm-lead__table-wrap {
+  width: 80%;
+  margin-top: 40px;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.crm-lead__table {
+  table-layout: fixed;
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.crm-lead__table-title {
+  text-align: left;
+  color: #a7a8a7;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.crm-lead__table-list {
+  border-bottom: 1px solid #a9aaa9;
+}
+
+.crm-lead__table-item {
+  padding: 17px 0 17px;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.crm-lead__table-item-but {
+  text-align: center;
+}
+
+.crm-lead__table-button {
+  font-size: 22px;
+  color: #6dd14e;
+}
+
+.crm-lead-page {
+  height: 100%;
+}
+
+.crm-lead-page .admin__side-panel {
+  margin-top: 50px;
+}
+
+.crm-lead-page__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.crm-lead-page__wrap {
+  width: 80%;
+}
+
+.crm-lead-page__width {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.crm-lead-page__top-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.crm-lead-page__list {
+  width: 40%;
+}
+
+.crm-lead-page__right-wrap {
+  width: 55%;
+  margin-top: 120px;
+}
+
+.crm-lead-page__item {
+  font-size: 24px;
+}
+
+.crm-lead-page__subtitle {
+  font-size: 20px;
+  color: #9e9e9e;
+  margin-bottom: 5px;
+}
+
+.crm-lead-page__value {
+  padding-left: 10px;
+  font-size: 24px;
+  color: #000000;
+}
+
+.crm-lead-page__textarea {
+  padding: 10px 10px 10px;
+  width: 100%;
+  resize: none;
+  height: 130px;
+  background: #eeeeee;
+}
+
+.crm-lead-page__table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.crm-lead-page__table-title {
+  text-align: left;
+  color: #a7a8a7;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.crm-lead-page__table-list {
+  background-color: #eeeeee;
+  border-bottom: 1px solid #a9aaa9;
+}
+
+.crm-lead-page__table-item {
+  padding: 15px 5px 17px 10px;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.crm-lead-page__buttons {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.crm-lead-page__button {
+  border-radius: 2px;
+  padding: 3px 19px 4px;
+  background-color: #eeeeee;
+  color: #6dd14e;
+  font-family: 'Play';
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.lead {
+  margin-bottom: 40px;
+}
+
+.crm-lead-page__table__wrapp {
+  height: 300px;
+  overflow-y: scroll;
 }
 
 @media only screen and (min-width: 321px) {
