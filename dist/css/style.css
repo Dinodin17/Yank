@@ -2617,6 +2617,12 @@ body {
   color: #777;
 }
 
+.tracking__incorrect {
+  font-size: 16px;
+  text-align: center;
+  color: red;
+}
+
 @media only screen and (min-width: 321px) {
   /* стили */
 }
@@ -3001,6 +3007,30 @@ body {
     background-color: black;
     width: 100%;
     height: 90px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .tracking__image {
+    width: 40vw;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .tracking__item-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .tracking__item-form {
+    width: 70%;
+  }
+
+  .auto-search-form {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -3418,6 +3448,21 @@ body {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .auto-search-form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .tracking__image {
+    width: 65vw;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .tracking__subtitle {
+    font-size: 24px;
   }
 }
 
