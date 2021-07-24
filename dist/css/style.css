@@ -2168,6 +2168,28 @@ body {
   text-align: right;
 }
 
+.spare-parts__banner {
+  background: url(../images/spare-parts1.jpg);
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.spare-parts__rem {
+  padding: 40px 0 50px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.spare-parts__subtitle {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Play';
+  color: #000000;
+  margin-bottom: 20px;
+}
+
 .calculator1 {
   margin-top: 120px;
 }
