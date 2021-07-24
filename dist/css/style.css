@@ -2168,6 +2168,26 @@ body {
   text-align: right;
 }
 
+.exclusive .nav__link {
+  color: white;
+}
+
+.exclusive .number {
+  color: white;
+}
+
+.spare-parts .nav__link {
+  color: white;
+}
+
+.spare-parts .number {
+  color: white;
+}
+
+.spare-parts .header {
+  background-color: transparent;
+}
+
 .spare-parts__banner {
   background: url(../images/spare-parts1.jpg);
   background-size: cover;
@@ -2188,6 +2208,14 @@ body {
   font-family: 'Play';
   color: #000000;
   margin-bottom: 20px;
+}
+
+.special__banner {
+  background: url(../images/special.jpg);
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  margin-bottom: 40px;
 }
 
 .calculator1 {
@@ -2526,6 +2554,67 @@ body {
 
 .filter__item-wrap {
   width: 40%;
+}
+
+.tracking {
+  margin-top: 120px;
+}
+
+.tracking__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tracking__description {
+  padding: 40px 0 45px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tracking__item-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.tracking__image {
+  height: 15vw;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.tracking__subtitle {
+  font-size: 30px;
+  padding: 10px 10px 10px;
+}
+
+.tracking__item-form {
+  width: 53%;
+  margin: 0 auto;
+}
+
+.tracking__table {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #eeeeee;
+}
+
+.tracking__table-list {
+  width: 100%;
+}
+
+.tracking .track-date {
+  text-align: right;
+}
+
+.tracking__table-item {
+  padding: 10px 10px 10px;
+  color: #777;
 }
 
 @media only screen and (min-width: 321px) {
