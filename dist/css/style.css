@@ -2065,81 +2065,107 @@ body {
   width: 80%;
 }
 
-.drop li,
-.slct {
-  background: url(https://dl.dropbox.com/u/62557375/Front-end/formstyle-demo-HowToMake/formstyle-demo-HowToMake_select/sprite.png) 0 0 no-repeat;
-}
-
-/* Form */
-
-.customForm {
-  color: #444444;
-  width: 320px;
-  margin: 2em auto;
-  font: 13px/1.8 Helvetica;
-}
-
-/*	=	Select */
-
-.slct {
-  display: block;
-  border-radius: 5px;
-  border: 1px solid #cecece;
-  background-color: #F6F6f6;
-  width: 285px;
-  padding: 4px 15px 4px 10px;
-  color: #444;
-  background-position: 290px -145px;
-  /*
-		Супер финт обрезаем текст
-		чтобы не вылезал за рамку
-	*/
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-}
-
-.slct.active {
-  border-radius: 5px 5px 0 0;
-  border-bottom: none;
-}
-
-.drop {
-  margin: 0;
-  padding: 0;
-  width: 310px;
-  border: 1px solid #cecece;
-  border-top: none;
-  display: none;
-  position: absolute;
-  background: #fff;
-}
-
-.drop li {
-  list-style: none;
-  border-top: 1px dotted #e8e8e8;
-  cursor: pointer;
-  display: block;
-  color: #444;
-  padding: 4px 15px 4px 25px;
-  background-position: 10px -119px;
-}
-
-.drop li:hover {
-  background-color: #e8e8e8;
-  color: #222;
-}
-
 .exclusive__banner {
   background: url(../images/exclusive-ban.jpg);
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
+  margin-bottom: 40px;
+}
+
+.exclusive__title {
+  padding-top: 35vh;
+  text-align: center;
+  font-family: 'Play';
+  font-size: calc(46px + 16*(100vw/1920));
+  color: #ffffff;
+}
+
+.exclusive__description {
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.exclusive__consubtitle {
+  font-size: 30px;
+  padding-top: 5%;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.exclusive__consultation {
+  background-color: black;
+  height: 70vh;
+}
+
+.exclusive__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 230px;
+  margin: 0 auto;
+}
+
+.exclusive__input {
+  padding: 10px 7px 6px;
+  width: 230px;
+  height: 35px;
+  background-color: #eeeeee;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.exclusive__form-button {
+  font-size: 22px;
 }
 
 .exclusive .header {
   background-color: transparent;
+}
+
+.exclusive__list {
+  height: 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 10vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.exclusive__item {
+  max-width: 30vw;
+  margin-right: 25px;
+}
+
+.exclusive__image {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.exclusive__subtitle {
+  color: #000000;
+  font-size: 20px;
+  text-align: right;
+}
+
+.exclusive__price {
+  color: #000000;
+  font-size: 20px;
+  text-align: right;
 }
 
 .calculator1 {
