@@ -3,6 +3,23 @@
 Reference: http://jsfiddle.net/BB3JK/47/
 */
 
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    arrows:true,
+    prevArrow: '<div class="icon-chevron-left arrows"></div>',
+    nextArrow: '<div class="icon-chevron-right arrows"></div>',
+  });
+
 window.onload = function(){
     crear_select();
   }
@@ -179,153 +196,153 @@ window.onload = function(){
 
      //------------------------------------------------------------------------
  //Главный слайдер с машинами
-    const banner = new Swiper('.slider',    {
-        // Optional parameters
+//     const banner = new Swiper('.slider',    {
+//         // Optional parameters
     
-        // If we need pagination
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
+//         // If we need pagination
+//         navigation: {
+//             nextEl: '.swiper-button-next',
+//             prevEl: '.swiper-button-prev',
+//           },
     
-          autoplay: {
-            delay: 20000,
-            stopOnLastSlide: false,
-          },
-          effect: 'fade',
-          fadeEffect :{
-              crossFade: true,
+//           autoplay: {
+//             delay: 20000,
+//             stopOnLastSlide: false,
+//           },
+//           effect: 'fade',
+//           fadeEffect :{
+//               crossFade: true,
              
-          }
-      });
-    //--------------------------------------------------------------
-    // Слайдер "Как работает Янк?"
-    const swiper = new Swiper('.stages-slider',    {
+//           }
+//       });
+//     //--------------------------------------------------------------
+//     // Слайдер "Как работает Янк?"
+//     const swiper = new Swiper('.stages-slider',    {
         
        
     
-        breakpoints: {
-            // when window width is >= 320px
-            767: {
-                direction: 'vertical',
-            },
-        },
+//         breakpoints: {
+//             // when window width is >= 320px
+//             767: {
+//                 direction: 'vertical',
+//             },
+//         },
         
-        autoplay: {
-            delay: 20000,
-            stopOnLastSlide: false,
-          },
+//         autoplay: {
+//             delay: 20000,
+//             stopOnLastSlide: false,
+//           },
        
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        parallax: true,
-        speed:2000,
+//         pagination: {
+//           el: '.swiper-pagination',
+//           clickable: true,
+//         },
+//         parallax: true,
+//         speed:2000,
           
-      });
+//       });
 
  
 
 
-  //----------------------------------------------
-  //Кнопки активные/неактывные
+//   //----------------------------------------------
+//   //Кнопки активные/неактывные
 
-  $('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.slider-nav'
-  });
-  $('.slider-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: true,
-    centerMode: true,
-    focusOnSelect: true
-  });
-
-
-var greenBut = document.querySelectorAll(".button");
-
-[].forEach.call(greenBut ,function(el){
-    el.addEventListener('click', function (e) {
-        el.classList.add('active');
-    })
-});
-
-var green = document.querySelectorAll(".green");
-[].forEach.call(green ,function(el){
-    el.addEventListener('click', function (e) {
-        el.classList.add('active-link');
-    })
-});
-
-const screenWidth = window.screen.width;
-console.log(screenWidth);
+//   $('.slider-for').slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     arrows: false,
+//     fade: true,
+//     asNavFor: '.slider-nav'
+//   });
+//   $('.slider-nav').slick({
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     asNavFor: '.slider-for',
+//     dots: true,
+//     centerMode: true,
+//     focusOnSelect: true
+//   });
 
 
-let header_burger = document.querySelector('.header_burger');
-let header_menu = document.querySelector('.header__wrap');
+// var greenBut = document.querySelectorAll(".button");
 
-let back = document.querySelector('body');
-let header_list = document.querySelector('.nav');
+// [].forEach.call(greenBut ,function(el){
+//     el.addEventListener('click', function (e) {
+//         el.classList.add('active');
+//     })
+// });
 
-header_burger.onclick = function () {
-    header_burger.classList.toggle('active_m');
-    header_menu.classList.toggle('active_m');
+// var green = document.querySelectorAll(".green");
+// [].forEach.call(green ,function(el){
+//     el.addEventListener('click', function (e) {
+//         el.classList.add('active-link');
+//     })
+// });
+
+// const screenWidth = window.screen.width;
+// console.log(screenWidth);
+
+
+// let header_burger = document.querySelector('.header_burger');
+// let header_menu = document.querySelector('.header__wrap');
+
+// let back = document.querySelector('body');
+// let header_list = document.querySelector('.nav');
+
+// header_burger.onclick = function () {
+//     header_burger.classList.toggle('active_m');
+//     header_menu.classList.toggle('active_m');
    
-    back.classList.toggle('lock');
-}
-header_list.onclick = function () {
-    header_list.classList.remove('active_m');
+//     back.classList.toggle('lock');
+// }
+// header_list.onclick = function () {
+//     header_list.classList.remove('active_m');
   
-    header_burger.classList.remove('active_m');
-    header_menu.classList.remove('active_m');
+//     header_burger.classList.remove('active_m');
+//     header_menu.classList.remove('active_m');
    
-    back.classList.remove('lock');
-}
+//     back.classList.remove('lock');
+// }
 
-const aboutItem = document.querySelectorAll('.about__item');
-if ($(window).width() <= '800'){
+// const aboutItem = document.querySelectorAll('.about__item');
+// if ($(window).width() <= '800'){
             
-            [].forEach.call(aboutItem, function(el) {
-                el.classList.add("swiper-slide");
-            });
+//             [].forEach.call(aboutItem, function(el) {
+//                 el.classList.add("swiper-slide");
+//             });
 
-            const swiper_about = new Swiper('.about-swiper', {
+//             const swiper_about = new Swiper('.about-swiper', {
     
-                autoplay: {
-                    delay: 10000,
+//                 autoplay: {
+//                     delay: 10000,
                    
-                  },
-                parallax: true,
-                speed:2000,
-                loop: true,
+//                   },
+//                 parallax: true,
+//                 speed:2000,
+//                 loop: true,
                 
-              });
+//               });
 
-              const swiper_about_bottom = new Swiper('.about-swiper-bottom', {
+//               const swiper_about_bottom = new Swiper('.about-swiper-bottom', {
     
                
-                autoplay: {
-                    delay: 7000,
-                    stopOnLastSlide: false,
-                  },
-                parallax: true,
-                speed:2000,
-                loop: true,
+//                 autoplay: {
+//                     delay: 7000,
+//                     stopOnLastSlide: false,
+//                   },
+//                 parallax: true,
+//                 speed:2000,
+//                 loop: true,
                 
-              });
+//               });
     
-  } else{
-    [].forEach.call(aboutItem, function(el) {
-        el.classList.remove("swiper-slide");
-    });
+//   } else{
+//     [].forEach.call(aboutItem, function(el) {
+//         el.classList.remove("swiper-slide");
+//     });
 
-  }
+//   }
 
   
 //   /*
