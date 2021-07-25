@@ -2788,6 +2788,60 @@ body {
   color: red;
 }
 
+.auto-order__wrapper {
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.auto-order__img {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 350px;
+  height: 45vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.auto-order__img-nav {
+  width: 97%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.auto-order__side-wrap {
+  width: 55%;
+}
+
+.auto-order__title {
+  margin-bottom: 25px;
+}
+
+.auto-order__subtitle {
+  margin-bottom: 25px;
+}
+
+.auto-order .slick-dots {
+  font-size: 0;
+}
+
+.charac-item {
+  margin-bottom: 10px;
+}
+
+.auto-order-slider-wrap {
+  width: 37%;
+}
+
+.auto-order-charac {
+  margin: 25px 0 25px;
+  width: 60%;
+}
+
 .application {
   position: absolute;
   top: 0;
@@ -3351,6 +3405,32 @@ body {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .auto-order__wrapper {
+    margin-top: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+
+  .auto-order .auto-order-slider-wrap {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .auto-order__side-wrap {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .stages {
     height: 90vh;
@@ -3860,6 +3940,43 @@ body {
 
   .tracking__subtitle {
     font-size: 24px;
+  }
+
+  .auto-order__wrapper {
+    margin-top: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+
+  .auto-order .auto-order-slider-wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .auto-order__subtitle {
+    font-size: 24px !important;
+  }
+
+  .auto-order__price {
+    font-size: 24px !important;
+  }
+
+  .auto-order__side-wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .auto-order .auto-order-charac {
+    margin: 25px 0 25px;
+    width: 90%;
   }
 }
 
