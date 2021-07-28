@@ -206,9 +206,13 @@
     <!-- ЭТАПЫ РАБОТЫ -->
     <div class="stages">
         <div class="site-width">
-        
+        <div class="stages__dot">
+            <img src="images/dot.png" alt="" class="stages__dot-img" id="dot">
+        </div>
         <div class="swiper-container stages-slider">
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination">
+                
+            </div>
 
             <div class="stages-slider__wrapper swiper-wrapper">
     
@@ -382,18 +386,17 @@
                 <div class="contact__wrap1 animate__animated animate__slideInLeft wow" data-wow-duration="0.8s">
                     <div class="contact__content">
                         <h2 class="contact__title title animate__animated animate__fadeInUpBig wow" data-wow-delay="0.8s" data-wow-duration="1.5s" id="button">Залиш заявку на<br> безкоштовну консультацію</h2>
-                        <div class="contact__forms">
-
-                            <form class="contact__inputs animate__animated animate__fadeInUpBig wow" data-wow-delay="1.5s" data-wow-duration="1.3s">
-                                <input type="text" placeholder="Ім'я Прізвище" class="form__item">
-                                <input type="email" placeholder="Пошта" class="form__item">
-                                <input type="tel" placeholder="Телефон" class="form__item">
-                            </form> 
-                            <form>
-                                <textarea class="form__textarea animate__animated animate__fadeInUpBig wow" data-wow-delay="1.5s" data-wow-duration="1.3s" placeholder="Мене цікавить" ></textarea><br>
+                        <form class="contact__forms">
+                                <div class="contact__inputs animate__animated animate__fadeInUpBig wow" data-wow-delay="1.5s" data-wow-duration="1.3s">
+                                    <input required type="text" placeholder="Ім'я Прізвище" class="form__item">
+                                    <input required type="email" placeholder="Пошта" class="form__item">
+                                    <input required type="tel" placeholder="Телефон" class="form__item">
+                                </div>
+                               <div>
+                                    <textarea class="form__textarea animate__animated animate__fadeInUpBig wow" data-wow-delay="1.5s" data-wow-duration="1.3s" placeholder="Мене цікавить" ></textarea><br>
                                 <input type="submit" value="Пoдзвоніть мені" class="button contact__button animate__animated animate__fadeIn wow" data-wow-delay="2.6s" data-wow-duration="2s" id="button">
-                            </form>
-                        </div> 
+                               </div>
+                        </form> 
                     </div>
                 </div>
                 <div class="contact__wrap2 animate__animated animate__fadeIn wow" data-wow-delay="2.9s" data-wow-duration="2.5s">
@@ -460,7 +463,7 @@
 
 
         <!-- Підібремо вам авто за лічені хвилини -->
-        <!-- <div class="get-auto">
+        <div class="get-auto">
             <div class="get-auto__wrapper">
                 <h2 class="get-auto__title">Підібремо вам авто за лічені хвилини</h2>
 
@@ -619,7 +622,7 @@
                 
                 <div class="get-auto__desc conf">Ваші дані захищені політикою конфіденційності</div>
             </div>
-        </div> -->
+        </div>
         <!-- ПОП АП КОНСУЛЬТАЦИЯ -->
    <!-- <div class="pop-up-concult">
        <div class="pop-up-concult__wrapper">

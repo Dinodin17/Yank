@@ -67,10 +67,10 @@
                     </div>
                 </div>
             </div>
-            <h2 class="exclusive__title pages__title">Спецтехніка</h2>
+            <h2 class="exclusive__title pages__title animate__animated animate__slideInUp wow" data-wow-delay="0.2s" data-wow-duration="1.5s">Спецтехніка</h2>
             
         </div>
-        <div class="exclusive__description desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores sequi voluptatum delectus. Eum expedita nostrum nemo veritatis fugit quasi! Velit, at quis! Perspiciatis nam sequi voluptate, tempore dolor magni eveniet!LoremLorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores sequi voluptatum delectus. Eum expedita nostrum nemo veritatis fugit quasi! Velit, at quis! Perspiciatis nam sequi voluptate, tempore dolor magni eveniet!Lorem
+        <div class="exclusive__description desc animate__animated animate__fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="1.5s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores sequi voluptatum delectus. Eum expedita nostrum nemo veritatis fugit quasi! Velit, at quis! Perspiciatis nam sequi voluptate, tempore dolor magni eveniet!LoremLorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores sequi voluptatum delectus. Eum expedita nostrum nemo veritatis fugit quasi! Velit, at quis! Perspiciatis nam sequi voluptate, tempore dolor magni eveniet!Lorem
         </div>
                 <ul class="exclusive__list">
                     <li class="exclusive__item">
@@ -97,10 +97,10 @@
                 </ul>
             </div>
             <div class="exclusive__consultation">
-                <h2 class="exclusive__consubtitle">Отримати безкоштовну консультацію</h2>
-                <form class="exclusive__form">
-                    <input type="text" placeholder="Ім'я" class="exclusive__input">
-                    <input type="text" placeholder="Телефон" class="exclusive__input">
+                <h2 class="exclusive__consubtitle animate__animated animate__fadeInUp wow">Отримати безкоштовну консультацію</h2>
+                <form class="exclusive__form animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">
+                    <input required type="text" placeholder="Ім'я" class="exclusive__input">
+                    <input required type="text" placeholder="Телефон" class="exclusive__input">
                     <input type="submit" value="Подзвоніть мені" class="exclusive__form-button button">
                 </form>
             </div>
@@ -136,6 +136,9 @@
     </div>
     <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script> 
     <script src="scripts/wow.min.js"></script>
-         <script src="scripts/script.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+        <script src="scripts/script.js"></script>
      </body>
  </html>
