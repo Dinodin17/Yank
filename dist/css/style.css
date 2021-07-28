@@ -78,7 +78,7 @@ textarea:focus {
 
 .title {
   font-family: 'Play';
-  font-size: calc(36px + 16*(100vw/1920));
+  font-size: calc(32px + 16*(100vw/1920));
 }
 
 .button {
