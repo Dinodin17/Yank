@@ -60,10 +60,9 @@ header_list.onclick = function () {
     back.classList.remove('lock');
 }
 
-// ползунок
 $(".polzunok-5").slider({
     min: 0,
-    max: 105000,
+    max: 5000,
     values: [2000, 3000],
     range: true,
     animate: "fast",

@@ -2617,6 +2617,10 @@ body {
   margin-bottom: 20px;
 }
 
+.special__banner {
+  height: 100vh;
+}
+
 .special .header {
   background-color: transparent;
 }
@@ -2624,7 +2628,7 @@ body {
 .special__banner {
   background: url(../images/special.jpg);
   background-size: cover;
-  height: 90vh;
+  height: 100vh !important;
   width: 100%;
   margin-bottom: 40px;
 }
@@ -2965,6 +2969,90 @@ body {
 
 .filter__item-wrap {
   width: 40%;
+}
+
+.polzunok-container-5 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+.polzunok-container-5 {
+  margin: 20px 0 20px;
+}
+
+.polzunok-container-5:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.polzunok-container-5 .ui-slider {
+  position: relative;
+  background: #ffffff;
+  height: 10px;
+  border-radius: 2px;
+  background-color: #eeeeee;
+}
+
+.polzunok-container-5 .ui-slider .ui-slider-handle {
+  position: absolute;
+  margin-left: -16px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 4px solid #6dd14e;
+  top: -11px;
+  background: #FFF;
+  z-index: 2;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+  -webkit-transition: border 0.4s, -webkit-transform 0.2s;
+  transition: border 0.4s, -webkit-transform 0.2s;
+  -o-transition: transform 0.2s, border 0.4s;
+  transition: transform 0.2s, border 0.4s;
+  transition: transform 0.2s, border 0.4s, -webkit-transform 0.2s;
+}
+
+.polzunok-container-5 .ui-slider .ui-slider-handle:hover,
+.polzunok-container-5 .ui-slider .ui-slider-handle:focus {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  border: 4px solid #6dd14e;
+}
+
+.polzunok-input-5-left,
+.polzunok-input-5-right {
+  height: 20px;
+  background: #FFF;
+  border-radius: 2px;
+  border: 2px solid #6dd14eb2;
+  text-align: center;
+  font-size: 16px;
+  padding: 16px;
+  width: 80px;
+  margin-top: 30px;
+}
+
+.polzunok-input-5-left {
+  float: left;
+}
+
+.polzunok-input-5-right {
+  float: right;
+}
+
+.polzunok-container-5 .ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  height: 10px;
+  border: 0;
+  background: #6dd14e;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), 1px 1px 5px white;
+          box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), 1px 1px 5px white;
 }
 
 .tracking {
