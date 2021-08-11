@@ -257,8 +257,8 @@
     transform: scale(0.33);
   }
   .swiper-pagination-bullet {
-    width: 15px;
-    height: 15px;
+    height: 17px;
+     width: 17px; 
     display: inline-block;
     border-radius: 100%;
     background: rgb(255, 255, 255);

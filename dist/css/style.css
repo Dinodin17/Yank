@@ -78,19 +78,20 @@ textarea:focus {
 
 .title {
   font-family: 'Play';
-  font-size: calc(32px + 16*(100vw/1920));
+  font-size: calc(39px + 16*(100vw/1920));
 }
 
 .button {
-  padding: 7px 20px 9px;
+  padding: 12px 23px 16px;
   background: #6dd14e;
   font-family: 'Play';
-  font-size: calc(22px + 16*(100vw/1920));
+  font-size: calc(16px + 16*(100vw/1920));
   color: #000000;
   -webkit-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   cursor: pointer;
+  border-radius: 2px;
 }
 
 .button:hover {
@@ -106,7 +107,7 @@ textarea:focus {
 }
 
 .desc2 {
-  font-size: calc(15px + 16*(100vw/1920));
+  font-size: calc(13px + 16*(100vw/1920));
 }
 
 @font-face {
@@ -299,6 +300,13 @@ body {
 
 .nav__link {
   color: #737373;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav__link:hover {
+  color: #000000;
 }
 
 .logo {
@@ -325,6 +333,13 @@ body {
 
 .header__contact__link {
   color: #737373;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.header__contact__link:hover {
+  color: #000000;
 }
 
 .green {
@@ -356,13 +371,16 @@ body {
 .banner {
   position: relative;
   margin-top: 120px;
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 30px;
 }
 
 .banner__button {
   position: absolute;
   left: 60%;
-  top: 90%;
+  bottom: 3%;
 }
 
 .banner .swiper-container {
@@ -412,7 +430,7 @@ body {
 
 .car-name {
   position: absolute;
-  bottom: 65%;
+  bottom: 50%;
   left: 83%;
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
@@ -443,7 +461,7 @@ body {
 }
 
 .benefits__wrap {
-  padding-top: 30px;
+  padding-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,23 +476,33 @@ body {
 }
 
 .benefits__title {
+  position: absolute;
+  left: 47%;
   z-index: 100;
+  white-space: nowrap;
   color: white;
-  width: 50%;
   text-transform: uppercase;
 }
 
 .benefits__title-delay {
-  width: 38%;
+  text-transform: uppercase;
+  z-index: 100;
+  white-space: nowrap;
+  color: white;
+  position: absolute;
+  left: 60%;
+  margin-top: 60px;
+  white-space: nowrap;
 }
 
 .benefits__list {
-  margin-top: 25px;
+  margin: 135px 20px 25px 0;
   width: 37%;
+  padding-bottom: 40px;
 }
 
 .benefits__item {
-  margin-bottom: 27px;
+  margin-bottom: 37px;
   color: white;
 }
 
@@ -485,11 +513,12 @@ body {
 .benefits__button {
   position: absolute;
   left: 2%;
-  bottom: 2%;
+  bottom: 7%;
 }
 
 .about {
-  height: 100vh;
+  width: 100%;
+  height: 120vh;
 }
 
 .about .swiper-container {
@@ -514,23 +543,17 @@ body {
   color: black;
 }
 
-.left {
-  width: 35%;
-  text-align: right;
-}
-
 .about-img {
-  margin: 7% 30px 0;
-  height: 90%;
+  margin: 10% 30px 0;
+  height: 85%;
 }
 
 .about .site-width {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .search {
@@ -572,6 +595,7 @@ body {
 }
 
 .stages__item {
+  background-color: white;
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -625,14 +649,16 @@ body {
 }
 
 .stages__dot-img {
-  width: 100px;
-  height: 50px;
+  width: 120px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   position: absolute;
-  top: -25px;
+  top: -20px;
   z-index: 1000;
-  -webkit-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  -webkit-transition: all 1.2s ease-out;
+  -o-transition: all 1.2s ease-out;
+  transition: all 1.2s ease-out;
   left: 2%;
 }
 
@@ -641,23 +667,27 @@ body {
 }
 
 .first {
-  left: 20%;
+  left: 16%;
 }
 
 .second {
-  left: 38%;
+  left: 30%;
 }
 
 .third {
-  left: 56%;
+  left: 44%;
 }
 
 .fourth {
-  left: 72%;
+  left: 59%;
 }
 
 .fifth {
-  left: 87%;
+  left: 73%;
+}
+
+.sixth {
+  left: 85%;
 }
 
 .swiper-pagination {
@@ -877,6 +907,19 @@ body {
   top: -20vh;
 }
 
+.social .social__image-wrap {
+  z-index: 1;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+  position: absolute;
+  right: 0;
+  top: 15%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 60%;
+  height: 35vh;
+}
+
 .social .inst__subtitle {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -942,26 +985,48 @@ body {
   z-index: 1;
   -webkit-clip-path: polygon(0 0, 77% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0 0, 77% 0%, 100% 100%, 0% 100%);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.img-wrap:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.img-wrap2 {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.img-wrap2:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.social__image-wrap2 {
+  -webkit-clip-path: polygon(0 0, 77% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 77% 0%, 100% 100%, 0% 100%);
   width: 34%;
   height: 35vh;
   position: absolute;
   left: 0;
   top: 55%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.img-wrap2 {
-  z-index: 1;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
-  position: absolute;
-  right: 0;
-  top: 15%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 60%;
-  height: 35vh;
+  overflow: hidden;
 }
 
 .salon {
@@ -1008,26 +1073,53 @@ body {
 }
 
 .salon__item {
-  max-width: 27vw;
-  margin-right: 25px;
+  width: 240px;
+  margin-right: 30px;
+}
+
+.salon__item:hover .salon__subtitle,
+.salon__item:hover .salon__price {
+  color: #6dd14e;
+}
+
+.salon__image-wrap {
+  overflow: hidden;
+  width: 240px;
+  height: 240px;
 }
 
 .salon__image {
-  max-width: 25vw;
+  width: 240px;
+  height: 240px;
   -o-object-fit: cover;
   object-fit: cover;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.salon__image:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .salon__subtitle {
   color: #ffffff;
   font-size: 20px;
   text-align: right;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 .salon__price {
   color: #ffffff;
   font-size: 20px;
   text-align: right;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 .contact {

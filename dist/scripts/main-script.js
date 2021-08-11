@@ -247,6 +247,15 @@ if ($(window).width() > '799'){
           
       });
 
+      $('.swiper-pagination-bullet').hover(function() {
+        $( this ).trigger( "click" );
+     });
+  
+     
+
+    //   $('.swiper-slide').on('mouseover', function() {
+    //     slidercontent.slideTo($(this).index());
+    // })
  
 
 
@@ -389,6 +398,11 @@ if ($(window).width() <= '800'){
             car_dot.classList.toggle('fifth');
         } else {
             car_dot.classList.remove('fifth');
+        }
+        if(dot == 6){
+            car_dot.classList.toggle('sixth');
+        } else {
+            car_dot.classList.remove('sixth');
         }
   });
  
