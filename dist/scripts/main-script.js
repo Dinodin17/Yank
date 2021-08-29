@@ -251,7 +251,14 @@ if ($(window).width() > '799'){
         $( this ).trigger( "click" );
      });
   
-     
+
+   
+   
+//    [].forEach.call(social ,function(){
+//        social.addEventListener('click', function (socialBack) {
+//         socialBack.classList.add('active');
+//        })
+//    });
 
     //   $('.swiper-slide').on('mouseover', function() {
     //     slidercontent.slideTo($(this).index());
@@ -432,3 +439,14 @@ if ($(window).width() <= '800'){
 //   } 
   
 //   var scroll = setInterval (function () {window.scrollBy (0,500);}, 7000);
+
+// var social = document.getElementById('socialHov');
+  
+// var socialBack = document.getElementById('socialBack');
+
+// social.addEventListener("mouseover", function () {
+//     socialBack.classList.add('socialBack');
+//   })
+// social.onmouseover = function () {
+//   socialBack.classList.add('socialBack');
+// }

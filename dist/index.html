@@ -10,7 +10,7 @@
         <link rel="preload" href="css/style.css" as="style">
         <link rel="preload" href="css/swiper.min.css" as="style">
         <link rel="preload"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style">
-        <!-- <link rel="preload" href="scripts/main-script.js" as="script"> -->
+        <link rel="preload" href="scripts/main-script.js" as="script">
 
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/swiper.min.css"/>
@@ -75,33 +75,90 @@
     <div class="banner">
         <div class="slider swiper-container">
             <div class="swiper-wrapper slider_con">
-                <div class="slider__item swiper-slide">
+                <div class="slider__item slider__item-cars swiper-slide">
                     <a href="#" class="slider__link">
                     
                     <img src="images/car.png" alt="image" class="slider__img animate__animated animate__fadeIn wow">
                     </a>
                     <h3 class="car-name desc2">Range Rover Evoque 2021</h3>
+                    <a href="#" class="button banner__button animate__animated animate__fadeIn wow" id="button" data-wow-delay="0.2s" data-wow-duration="1.5s">Підібрати авто</a>
+                    <div class="slider__about-description desc2" style="opacity: 0;">
+                        Компанія YANK працює з 2008 року. Возимо авто з США, Кореї та Європи.
+                    </div>
                 </div>
-                <div class="slider__item swiper-slide">
+
+               
+                <div class="slider__item  slider__item-about swiper-slide">
                     <a href="#" class="slider__link">
                     
-                        <img src="images/car.png" alt="image" class="slider__img animate__animated animate__fadeIn wow">
-                        </a>
-                        <h3 class="car-name desc2">Range Rover 2021</h3>
-                </div>
-                <div class="slider__item swiper-slide">
-                    
-                    <a href="#" class="slider__link">
-                    <img src="images/car4.png" alt="image" class="slider__img animate__animated animate__fadeIn wow">
+                    <img src="images/about-car2.png" alt="image" class="slider__img animate__animated animate__fadeIn wow">
                     </a>
-                    <h3 class="car-name desc2">Range Rover Evoque 2021</h3>
+                    <h3 class="car-name desc2">Tesla Model 3 2018</h3>
+                    <div class="slider__about-description desc2">
+                        Компанія YANK працює з 2008 року. Возимо авто з США, Кореї та Європи.
+                    </div>
+                    <a href="#" class="button banner__button animate__animated animate__fadeIn wow" id="button" data-wow-delay="0.2s" data-wow-duration="1.5s">Більше про YANK</a>
                 </div>
+
+                <div class="slider__item  slider__item-available swiper-slide">
+                    <a href="#" class="slider__link available-link">
+                    <div class="available-car__wrapper">
+                        <img src="images/available-car2.jpg" alt="image" class="slider__img animate__animated animate__fadeIn wow">
+                    <h2 class="available-title title">Автосалон YANK пропонує широкий вибір авто</h2>
+                    </div>
+                    </a>
+
+                    <div class="slider__about-description desc2">
+                       Ви зможете обрати авто на будь-який смак у нашому салоні...
+                    </div>
+                    <a href="#" class="button banner__button animate__animated animate__fadeIn wow" id="button" data-wow-delay="0.2s" data-wow-duration="1.5s">Авто в наявності</a>
+                </div>
+
+
+                <div class="slider__item  slider__item-exclusive swiper-slide">
+                    <a href="#" class="slider__link">
+                    
+                    <img src="images/exclusive-car2.png" alt="image" class="slider__img animate__animated animate__fadeIn wow">
+                    </a>
+                    <h3 class="car-name desc2">Tesla Model 3 2018</h3>
+                    <div class="slider__about-description desc2">
+                        Компанія YANK працює з 2008 року. Возимо авто з США, Кореї та Європи.
+                    </div>
+                    <a href="#" class="button banner__button animate__animated animate__fadeIn wow" id="button" data-wow-delay="0.2s" data-wow-duration="1.5s">Більше про YANK</a>
+                </div>
+                
+                <div class="slider__item  slider__item-special swiper-slide">
+                    <a href="#" class="slider__link">
+                    
+                    <img src="images/special-car2.png" alt="image" class="slider__img animate__animated animate__fadeIn wow">
+                    </a>
+                    <h3 class="car-name desc2">John Deere 8345R</h3>
+                    <div class="slider__about-description desc2">
+                        Шукаєте спецтехніку за кращими цінами?
+                    </div>
+                    <a href="#" class="button banner__button animate__animated animate__fadeIn wow" id="button" data-wow-delay="0.2s" data-wow-duration="1.5s">Більше про YANK</a>
+                </div>
+
+                <div class="slider__item  slider__item-spare-parts swiper-slide">
+                    <a href="#" class="slider__link available-link">
+                    <div class="available-car__wrapper">
+                        <img src="images/spare-slide.jpg" alt="image" class="slider__img animate__animated animate__fadeIn wow">
+                    <h2 class="spare-parts-title title">Ремонт та запчастини</h2>
+                    </div>
+                    </a>
+
+                    <div class="slider__about-description desc2">
+                      Компанія YANK ремонтує авто...
+                    </div>
+                    <a href="#" class="button banner__button animate__animated animate__fadeIn wow" id="button" data-wow-delay="0.2s" data-wow-duration="1.5s">Переглянути</a>
+                </div>
+                
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
       
-        <a href="#" class="button banner__button animate__animated animate__fadeIn wow" id="button" data-wow-delay="0.2s" data-wow-duration="1.5s">Підібрати авто</a>
+        <!-- <a href="#" class="button banner__button animate__animated animate__fadeIn wow" id="button" data-wow-delay="0.2s" data-wow-duration="1.5s">Підібрати авто</a> -->
     </div>
     <!-- ПРЕИМУЩЕСТВА АВТО С США -->
     <div class="benefits">
@@ -142,7 +199,7 @@
     <!-- Якісний підбір і тд -->
     <div class="about">
         <div class="site-width">
-            <div class="swiper-container about-swiper left">
+            <div class="swiper-container about-swiper">
                 <div class="about__list swiper-wrapper">
                     <div class="about__item ">
                         <h4 class="about__subtitle desc " data-swiper-parallax="-100">Якісний підбір та детальна перевірка 
@@ -182,7 +239,7 @@
                 <img src="images/фон.png" alt="" class="about-img " >
             </div>
 
-            <div class=" swiper-container about-swiper-bottom ">
+            <div class="swiper-container about-swiper-bottom left">
                 <div class="about__list swiper-wrapper">
                     <div class="about__item">
                         <h4 class="about__subtitle desc" data-swiper-parallax="-100">Працюємо з 2007 року</h4>
@@ -346,13 +403,13 @@
             </div>
             
             <div class="social__wrap1">
-                <img src="images/black.jpg" alt="" class="social__background2 animate__animated animate__slideInRight wow" data-wow-delay="1s">
+                <img src="images/black.jpg" alt="" class="social__background2 animate__animated animate__slideInRight wow" data-wow-delay="1s" id="socialBack">
                     <div class="social__image-wrap">
-                        <img src="images/social-img.jpg" alt="" class="img-wrap2 animate__animated animate__slideInRight wow" data-wow-delay="1.6s">
+                        <img src="images/social-img.jpg" alt="" class="img-wrap2 animate__animated animate__slideInRight wow" data-wow-delay="1.6s" id="socialHov">
                     </div>
                     
                     <h3 class="social__subtitle tel__subtitle animate__animated animate__fadeIn wow" data-wow-delay="2s">Telegram</h3>
-                </div>
+            </div>
         </div>
 
          <div class="social__telegram">
@@ -364,10 +421,10 @@
                 та асортиментом.
                
             </div>
-            <div class="social__wrap ">
-                <img src="images/black.jpg" alt="" class="social__background1 animate__animated animate__slideInLeft wow" data-wow-delay="1s">
+            <div class="social__wrap">
+                <img src="images/black.jpg" alt="" class="social__background1 animate__animated animate__slideInLeft wow" data-wow-delay="1s" id="socialBack">
                 <div class="social__image-wrap2">
-                <img src="images/social-img2.jpg" alt="" class="img-wrap animate__animated animate__slideInLeft wow" data-wow-delay="1.6s">
+                <img src="images/social-img2.jpg" alt="" class="img-wrap animate__animated animate__slideInLeft wow" data-wow-delay="1.6s" id="socialHov">
                 </div>
                 <h3 class="social__subtitle inst__subtitle animate__animated animate__fadeIn wow" data-wow-delay="2s">Instagram</h3>
             </div>
@@ -416,7 +473,7 @@
          
                 <div class="contact__wrap1 animate__animated animate__slideInLeft wow" data-wow-duration="0.8s">
                     <div class="contact__content">
-                        <h2 class="contact__title title animate__animated animate__fadeInUpBig wow" data-wow-delay="0.8s" data-wow-duration="1.5s" id="button">Заллиш заявку на<br>безкоштовну консультацію</h2>
+                        <h2 class="contact__title title animate__animated animate__fadeInUpBig wow" data-wow-delay="0.8s" data-wow-duration="1.5s" id="button">Залиш заявку на<br>безкоштовну консультацію</h2>
                         <form class="contact__forms">
                                 <div class="contact__inputs animate__animated animate__fadeInUpBig wow" data-wow-delay="1.5s" data-wow-duration="1.3s">
                                     <input required type="text" placeholder="Ім'я" class="form__item">
@@ -492,6 +549,10 @@
         <!-- Підібремо вам авто за лічені хвилини -->
         <!-- <div class="get-auto">
             <div class="get-auto__wrapper">
+                <div class="close" id="close">
+                    <div class="close1"></div>
+                    <div class="close2"></div>
+                </div>
                 <h2 class="get-auto__title">Підібремо вам авто за лічені хвилини</h2>
 
                 <div class="get-auto__desc">Заповніть поля нижче і отримайте варіанти автомобілів</div>
