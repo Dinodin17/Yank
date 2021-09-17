@@ -110,6 +110,10 @@ textarea:focus {
   font-size: calc(13px + 16*(100vw/1920));
 }
 
+.block {
+  overflow: hidden;
+}
+
 @font-face {
   font-family: 'MyriadPro-Bold';
   src: url("../fonts/MyriadPro-Bold.eot");
@@ -377,7 +381,7 @@ body {
 .banner__button {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 2%;
 }
 
 .banner .swiper-container {
@@ -496,12 +500,10 @@ body {
 }
 
 .slider__about-description {
-  max-width: 80%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 80%;
   margin: 0 auto;
-  height: 80px;
+  text-align: left;
+  height: 100px;
 }
 
 .car-name {
@@ -705,6 +707,7 @@ body {
 
 .stages .swiper-container {
   top: -60px;
+  border-radius: 5px;
 }
 
 .stages .swiper-container-vertical > .swiper-pagination-bullets {
@@ -1070,7 +1073,7 @@ body {
   width: 35%;
   position: absolute;
   right: 50px;
-  top: 67%;
+  top: 75%;
 }
 
 .img-wrap {
@@ -1278,7 +1281,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 20vw;
+  width: 17vw;
   height: 32vh;
   margin-right: 60px;
 }
@@ -1288,7 +1291,9 @@ body {
 }
 
 .contact__button {
-  margin-top: 20px;
+  margin-top: 15px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .contact__subtitle {
@@ -1347,18 +1352,48 @@ body {
   display: flex;
 }
 
+.contact__placeholder {
+  color: #636260;
+  font-size: 14px;
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 3px;
+  letter-spacing: .05em;
+}
+
+.contact__inputs-wrap {
+  position: relative;
+}
+
 .form__item {
-  padding-left: 3px;
   height: 36px;
   margin-bottom: 20px;
-  border-radius: 2px;
+  border-radius: 3px;
+  padding: 15px 3px 0;
+  color: black;
+  font-size: 18px;
 }
 
 .form__textarea {
-  padding-left: 3px;
+  padding: 6px 7px 0;
   width: 25vw;
-  height: 25vh;
+  height: 110px;
+  margin-top: 38px;
   resize: none;
+  border-radius: 3px;
+  font-size: 18px;
+  color: #000000;
+}
+
+.textarea-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer__list {
@@ -1989,9 +2024,9 @@ body {
   height: 35px;
   color: #777;
   background-color: #eeeeee;
-  -webkit-transition: all 375ms ease-in-out;
-  -o-transition: all 375ms ease-in-out;
-  transition: all 375ms ease-in-out;
+  -webkit-transition: height 375ms ease-in-out;
+  -o-transition: height 375ms ease-in-out;
+  transition: height 375ms ease-in-out;
 }
 
 .select_mate select {
@@ -2021,9 +2056,9 @@ body {
   margin-bottom: 0px;
   margin-top: 0px;
   border-radius: 0px 0px 3px 3px;
-  -webkit-transition: all 375ms ease-in-out;
-  -o-transition: all 375ms ease-in-out;
-  transition: all 375ms ease-in-out;
+  -webkit-transition: height 375ms ease-in-out;
+  -o-transition: height 375ms ease-in-out;
+  transition: height 375ms ease-in-out;
 }
 
 .cont_select_int li {
@@ -2035,9 +2070,9 @@ body {
   list-style-type: none;
   padding: 6px 2%;
   margin: 0px;
-  -webkit-transition: all 275ms ease-in-out;
-  -o-transition: all 275ms ease-in-out;
-  transition: all 275ms ease-in-out;
+  -webkit-transition: background-color 275ms ease-in-out;
+  -o-transition: background-color 275ms ease-in-out;
+  transition: background-color 275ms ease-in-out;
   display: block;
   cursor: pointer;
 }
@@ -2052,6 +2087,7 @@ body {
 
 .cont_select_int .active {
   background-color: #EEEEEE;
+  color: #777;
 }
 
 .selecionado_opcion {
@@ -2960,7 +2996,7 @@ body {
 }
 
 .calculator1__image-wrap {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   right: 0;
   width: 49%;
@@ -2977,7 +3013,8 @@ body {
 }
 
 .calculator1__right-wrap {
-  opacity: 1;
+  display: none;
+  opacity: 0;
   width: 49%;
   background-color: #eeeeee;
 }
@@ -3473,9 +3510,11 @@ body {
   z-index: 1001;
   height: 100vh;
   width: 100%;
+  visibility: hidden;
 }
 
 .pop-up-concult__wrapper {
+  position: relative;
   padding: 30px 20px 30px;
   background-color: #ffffff;
   width: 450px;
@@ -3523,12 +3562,33 @@ body {
   background-color: #eeeeee;
   height: 35px;
   margin-bottom: 30px;
+  padding: 5px 0 3px 5px;
+  font-size: 18px;
+  color: #000000;
 }
 
 .pop-up__button {
   font-size: 22px;
   width: 70%;
   margin: 0 auto;
+  font-size: 20px;
+  padding: 12px 23px 16px;
+  background: #6dd14e;
+  font-family: 'Play';
+  color: #000000;
+  -webkit-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.pop-up__button:hover {
+  background: #96d382;
+}
+
+.show {
+  visibility: visible;
 }
 
 .get-auto {
@@ -3540,6 +3600,7 @@ body {
   height: 100vh;
   width: 100%;
   overflow-y: scroll;
+  visibility: hidden;
 }
 
 .get-auto__wrapper {
@@ -3584,9 +3645,22 @@ body {
   margin-right: 10px;
 }
 
+.get-auto .popup-img-wrap {
+  width: 80px;
+  width: 80px;
+  outline: 0px solid #6dd14e;
+  -webkit-transition: outline 0.2s ease-out;
+  -o-transition: outline 0.2s ease-out;
+  transition: outline 0.2s ease-out;
+}
+
+.get-auto .popup-img-wrap:hover {
+  outline: 1px solid #6dd14e;
+}
+
 .get-auto__image {
-  width: 80px;
-  width: 80px;
+  height: 100%;
+  width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -3620,6 +3694,15 @@ body {
   margin-top: 15px;
 }
 
+.close {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  top: 0;
+}
+
 .close1 {
   position: absolute;
   top: 15px;
@@ -3642,6 +3725,10 @@ body {
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
   background-color: #000000;
+}
+
+.show {
+  visibility: visible;
 }
 
 @media only screen and (min-width: 321px) {

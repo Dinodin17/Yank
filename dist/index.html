@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="css/swiper.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
-    <body>
+    <body id="block">
     <div class="header">
         <div class="site-width">
             <a href="#" class="nav__link">
@@ -62,10 +62,10 @@
                         <a href="tel:" class="header__contact__link number">+3000000000</a>
                     </li>
                     <li class="header__contact-item">
-                        <a href="#" class="header__contact__link green">Відстежити авто</a>
+                        <a href="#" class="header__contact__link green" onclick="getAuto()">Відстежити авто</a>
                     </li>
                     <li class="header__contact-item">
-                        <a href="#" class="header__contact__link green">Замовити дзвінок</a>
+                        <a href="#" class="header__contact__link green" onclick="myConsult()">Замовити дзвінок</a>
                     </li>
                 </ul>
             </div>
@@ -81,7 +81,7 @@
                     <img src="images/car.png" alt="image" class="slider__img animate__animated animate__fadeIn wow">
                     </a>
                     <h3 class="car-name desc2">Range Rover Evoque 2021</h3>
-                    <a href="#" class="button banner__button animate__animated animate__fadeIn wow" id="button" data-wow-delay="0.2s" data-wow-duration="1.5s">Підібрати авто</a>
+                    <a href="#" class="button banner__button animate__animated animate__fadeIn wow" id="button" data-wow-delay="0.2s" data-wow-duration="1.5s" >Підібрати авто</a>
                     <div class="slider__about-description desc2" style="opacity: 0;">
                         Компанія YANK працює з 2008 року. Возимо авто з США, Кореї та Європи.
                     </div>
@@ -125,7 +125,7 @@
                     <div class="slider__about-description desc2">
                         Компанія YANK працює з 2008 року. Возимо авто з США, Кореї та Європи.
                     </div>
-                    <a href="#" class="button banner__button animate__animated animate__fadeIn wow" id="button" data-wow-delay="0.2s" data-wow-duration="1.5s">Більше про YANK</a>
+                    <a href="#" class="button banner__button animate__animated animate__fadeIn wow" id="button" data-wow-delay="0.2s" data-wow-duration="1.5s">Ексклюзивне авто</a>
                 </div>
                 
                 <div class="slider__item  slider__item-special swiper-slide">
@@ -137,7 +137,7 @@
                     <div class="slider__about-description desc2">
                         Шукаєте спецтехніку за кращими цінами?
                     </div>
-                    <a href="#" class="button banner__button animate__animated animate__fadeIn wow" id="button" data-wow-delay="0.2s" data-wow-duration="1.5s">Більше про YANK</a>
+                    <a href="#" class="button banner__button animate__animated animate__fadeIn wow" id="button" data-wow-delay="0.2s" data-wow-duration="1.5s">Спецтехніка</a>
                 </div>
 
                 <div class="slider__item  slider__item-spare-parts swiper-slide">
@@ -159,7 +159,6 @@
             <div class="swiper-button-next"></div>
         </div>
       
-        <!-- <a href="#" class="button banner__button animate__animated animate__fadeIn wow" id="button" data-wow-delay="0.2s" data-wow-duration="1.5s">Підібрати авто</a> -->
     </div>
     <!-- ПРЕИМУЩЕСТВА АВТО С США -->
     <div class="benefits">
@@ -329,7 +328,7 @@
                     <div class="stages__inner">
                         <h3 class="stages__title" data-swiper-parallax="-300">Оплата</h3>
                         <div class="stages__description desc" data-swiper-parallax="-200">
-                            Оплата авто проходить протягом 2 днів після виграшу. Для цього ми виставляємо інвойс (міжнародна рахунок-фактура), який потрібно оплатити SWIFT переказом через банк.
+                            Оплата авто проходить протягом 2 днів після виграшу.Для цього ми виставляємо інвойс (міжнародна рахунок-фактура), який потрібно оплатити SWIFT переказом через банк.
                         </div>
                     </div>
                 </div>
@@ -393,7 +392,7 @@
             </li>
         </ul>
     </div>
-
+    <!-- СОЦ СЕТИ -->
     <div class="social">
         <h2 class="social__title title animate__animated animate__fadeInUpBig wow" data-wow-delay="0.5s" >Приєднуйся до наших<br>соцмереж</h2>
         <div class="social__inst">
@@ -470,19 +469,29 @@
        </ul>
     </div>
    </div>
+
+   <!-- Контакты -->
         <div class="contact">
-         
                 <div class="contact__wrap1 animate__animated animate__slideInLeft wow" data-wow-duration="0.8s">
                     <div class="contact__content">
                         <h2 class="contact__title title animate__animated animate__fadeInUpBig wow" data-wow-delay="0.8s" data-wow-duration="1.5s" id="button">Залиш заявку на<br>безкоштовну консультацію</h2>
                         <form class="contact__forms">
                                 <div class="contact__inputs animate__animated animate__fadeInUpBig wow" data-wow-delay="1.5s" data-wow-duration="1.3s">
-                                    <input required type="text" placeholder="Ім'я" class="form__item">
-                                    <input required type="email" placeholder="Пошта" class="form__item">
-                                    <input required type="tel" placeholder="Телефон" class="form__item">
+                                    <div class="contact__inputs-wrap">
+                                        <label class="contact__placeholder">Ім'я</label>
+                                        <input required type="text" class="form__item">
+                                      </div>
+                                      <div class="contact__inputs-wrap">
+                                        <label class="contact__placeholder">Пошта</label>
+                                        <input required type="email"  class="form__item">
+                                      </div>
+                                      <div class="contact__inputs-wrap">
+                                        <label class="contact__placeholder">Телефон</label>
+                                        <input required type="tel" class="form__item">
+                                      </div>
                                 </div>
-                               <div>
-                                    <textarea class="form__textarea animate__animated animate__fadeInUpBig wow" data-wow-delay="1.5s" data-wow-duration="1.3s" placeholder="Мене цікавить…" ></textarea><br>
+                               <div class="textarea-wrap">
+                                <textarea class="form__textarea animate__animated animate__fadeInUpBig wow" data-wow-delay="1.5s" data-wow-duration="1.3s" placeholder="Мене цікавить…" ></textarea><br>
                                 <input type="submit" value="Подзвоніть мені" class="button contact__button animate__animated animate__fadeIn wow" data-wow-delay="2.6s" data-wow-duration="2s" id="button">
                                </div>
                         </form> 
@@ -548,9 +557,9 @@
 
 
         <!-- Підібремо вам авто за лічені хвилини -->
-        <!-- <div class="get-auto">
+        <div class="get-auto" id="get-auto-popup">
             <div class="get-auto__wrapper">
-                <div class="close" id="close">
+                <div class="close" id="close" onclick="getHide()">
                     <div class="close1"></div>
                     <div class="close2"></div>
                 </div>
@@ -560,38 +569,56 @@
                 <div class="get-auto__choose">Який тип кузову вам подобається?</div>
                 <ul class="get-auto__car-list">
                     <li class="get-auto__car-item">
-                        <img src="images/photo.png" alt="" class="get-auto__image">
-                        <div class="get-auto__body">Седан</div>
+                        <div class="popup-img-wrap" id="chosenCar">
+                            <img src="images/photo.png" alt="" class="get-auto__image">
+                        </div>
+                            <div class="get-auto__body">Седан</div>
                     </li>
                     <li class="get-auto__car-item">
-                        <img src="images/photo1.png" alt="" class="get-auto__image">
+                        <div class="popup-img-wrap" id="chosenCar">
+                            <img src="images/photo1.png" alt="" class="get-auto__image">
+                        </div>
                         <div class="get-auto__body">Мінівен</div>
                     </li>
                     <li class="get-auto__car-item">
+                        <div class="popup-img-wrap" id="chosenCar">
                         <img src="images/photo2.png" alt="" class="get-auto__image">
+                        </div>
                         <div class="get-auto__body">Хетчбек</div>
                     </li>
                     <li class="get-auto__car-item">
+                        <div class="popup-img-wrap" id="chosenCar">
                         <img src="images/photo3.png" alt="" class="get-auto__image">
+                        </div>
                         <div class="get-auto__body">Купе</div>
                     </li>
 
                 </ul>
                 <ul class="get-auto__car-list">
                     <li class="get-auto__car-item">
-                        <img src="images/photo4.png" alt="" class="get-auto__image">
+                        <div class="popup-img-wrap" id="chosenCar">                 
+                            <img src="images/photo4.png" alt="" class="get-auto__image">
+                        </div>
                         <div class="get-auto__body">Кросовер</div>
                     </li>
                     <li class="get-auto__car-item">
-                        <img src="images/photo5.png" alt="" class="get-auto__image">
+                        <div class="popup-img-wrap" id="chosenCar">
+                            <img src="images/photo5.png" alt="" class="get-auto__image">
+                            </div>
                         <div class="get-auto__body">Кабріолет</div>
                     </li>
                     <li class="get-auto__car-item">
-                        <img src="images/photo6.png" alt="" class="get-auto__image">
+                        <div class="popup-img-wrap" id="chosenCar">
+                             <img src="images/photo6.png" alt="" class="get-auto__image">
+                        </div>
+                       
                         <div class="get-auto__body">Бус</div>
                     </li>
                     <li class="get-auto__car-item">
-                        <img src="images/photo7.png" alt="" class="get-auto__image">
+                        <div class="popup-img-wrap" id="chosenCar">
+                            <img src="images/photo7.png" alt="" class="get-auto__image">
+                        </div>
+                        
                         <div class="get-auto__body">Пікап</div>
                     </li>
 
@@ -711,12 +738,17 @@
                 
                 <div class="get-auto__desc conf">Ваші дані захищені політикою конфіденційності</div>
             </div>
-        </div> -->
+        </div>
         <!-- ПОП АП КОНСУЛЬТАЦИЯ -->
-   <!-- <div class="pop-up-concult">
-       <div class="pop-up-concult__wrapper">
+   <div class="pop-up-concult" id="popupConsult">
+    
+       <div class="pop-up-concult__wrapper" id="my-node">
+        <div class="close" id="close" onclick="Hide()">
+            <div class="close1"></div>
+            <div class="close2"></div>
+        </div>
            <h2 class="pop-up-concult__title">Отримайте безкоштовну консультацію</h2>
-            <div class="pop-up-concult__desc">Залиште ваші контактні дані і наш менеджер зв'яжеться к Вами найближчим часов</div>
+            <div class="pop-up-concult__desc">Залиште ваші контактні дані і наш менеджер зв'яжеться з Вами найближчим часов</div>
             <form class="pop-up-concult__form">
                 <div class="pop-up-concult__subtitle">Ваше ім'я</div>
                 <input type="text" class="pop-up_input">
@@ -724,14 +756,14 @@
                 <div class="pop-up-concult__subtitle">Ваш телефон</div>
                 <input type="text" class="pop-up_input">
 
-                <input type="submit" value="Отримати консультацію" class=" pop-up__button button"></input>
+                <input type="submit" value="Отримати консультацію" class="pop-up__button"></input>
                 <div  class="pop-up-concult__data">
-                    Ваші дані захищені політекою конфіденційності
+                    Ваші дані захищені політикою конфіденційності
                 </div>
             </form>
-       </div>
-       
-   </div> -->
+       </div>  
+   </div>
+
     <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script> 
     <script src="scripts/wow.min.js"></script>
     <script src="scripts/swiper.min.js"></script>
