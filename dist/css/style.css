@@ -3013,8 +3013,6 @@ body {
 }
 
 .calculator1__right-wrap {
-  display: none;
-  opacity: 0;
   width: 49%;
   background-color: #eeeeee;
 }

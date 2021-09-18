@@ -1,0 +1,256 @@
+<!-- КАЛЬКУЛЯТОР -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Калькулятор</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preload" href="css/style.css" as="style">
+        <link rel="preload"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    <body>
+   <div class="calculator1">
+           <div class="header">
+               <div class="site-width">
+                   <a href="#" class="nav__link">
+                       <div class="logo"></div>
+                   </a>
+                   <div class="header_burger">
+                       <span></span>
+                   </div>
+                   <div class="header__wrap">
+                           
+                       <ul class="nav">
+                           <li class="nav__item">
+                               <a href="#" class="nav__link">Головна</a>
+                           </li>
+                           <li class="nav__item">
+                               <a href="#" class="nav__link">Аукціон</a>
+                           </li>
+                           <li class="nav__item">
+                               <a href="#" class="nav__link">Авто в Україні</a>
+                           </li>
+                           <li class="nav__item">
+                               <a href="#" class="nav__link">Калькулятор</a>
+                           </li>
+                           <li class="nav__item">
+                               <a href="#" class="nav__link">Ексклюзив</a>
+                           </li>
+                           <li class="nav__item">
+                               <a href="#" class="nav__link">Спецтехніка</a>
+                           </li>
+                           <li class="nav__item">
+                               <a href="#" class="nav__link">Запчастини</a>
+                           </li>
+                           <li class="nav__item">
+                               <a href="#" class="nav__link">Контакти</a>
+                           </li>
+                       </ul>
+                       <ul class="header__contact">
+                           <li class="header__contact-item">
+                               <a href="tel:" class="header__contact__link number">+3000000000</a>
+                           </li>
+                           <li class="header__contact-item">
+                               <a href="tel:" class="header__contact__link number">+3000000000</a>
+                           </li>
+                           <li class="header__contact-item">
+                               <a href="#" class="header__contact__link green">Відстежити авто</a>
+                           </li>
+                           <li class="header__contact-item">
+                               <a href="#" class="header__contact__link green">Замовити дзвінок</a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+           <div class="calculator1__title-wrap animate__animated animate__slideInLeft"  data-wow-delay="1s" >
+               <h2 class="calculator1__title title animate__animated animate__fadeIn" data-wow-delay="6s" data-wow-duration="1s">Калькулятор вартості</h2>
+           </div>
+           
+           <div class="calculator1__wrapper">
+               <div class="calculator1__left-wrap">
+                   <form class="calculator1__form">
+                       <ul class="calculator1__form-list">
+                           <li class="calculator1__form-item">
+                               <div class="calculator1__subtitle">Тип пального</div>
+                               <div class="calculator1__select-width">
+                                   <div class="cont_select_center">
+                                       <div class="select_mate" data-mate-select="active" >
+                                           <select name="" onchange="" onclick="return false;" id="">
+                                               <option value=""  >Бензин</option>
+                                               <option value="1">Дизель</option>
+                                               <option value=""  >Електро</option>
+                                               <option value="1">Гібрид</option>
+                                           </select>
+                                           <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                               <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                               <path d="M0-.75h24v24H0z" fill="none"/>
+                                           </svg></span> 
+                                           <div class="cont_list_select_mate">
+                                           <ul class="cont_select_int">  </ul> 
+                                           </div>
+                                       </div>
+                                   </div> 
+                               </div>
+                           </li>
+                           <li class="calculator1__form-item">
+                               <div class="calculator1__subtitle">Вартість авто за кордоном</div>
+                               <input type="text" class="calculator1__input input-curr">
+                               <div class="calculator1__subtitle">USD</div>
+                           </li>
+                           <li class="calculator1__form-item">
+                               <div class="calculator1__subtitle">Об'єм двигуна в см<sup><small>3</small></sup></div>
+                               <input type="text" class="calculator1__input">
+                           </li>
+                           <li class="calculator1__form-item">
+                               <div class="calculator1__subtitle">Вік авто</div>
+                               <input type="text" class="calculator1__input">
+                           </li>
+                           <li class="calculator1__form-item">
+                               <div class="calculator1__subtitle">Доставка в порт(штат)</div>
+                               <input type="text" class="calculator1__input">
+                           </li>
+                           <li class="calculator1__buttons">
+                               <input type="button" class="calculator1__button" value="Розрахувати">
+                               <input type="button" class="calculator1__button" value="Підібрати">
+                           </li>
+                       </ul>
+
+                   </form>                    
+
+                   
+               </div>
+             
+                   <div class="calculator1__right-wrap">
+                      
+                       <ul class="calculator1__price-list">
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">Вартість авто за кордоном</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">ввізне мито</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">Акційні збори</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">НДС</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">Аукціонні збори</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">Комісія банку</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">Послуги дилера</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">Логістика</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">Доставка в порт</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">Контейнер(місце)</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">Документи, пошта, Fed EX</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">УТТО</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">Погрузка на автовіз</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">Парковка на складі</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">Парковка на місці</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">Послуги за роботу</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">Сертифікація</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">Підсумкова вартість</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">Постановка на облік</div>
+                               <div class="calculator1__price">1000$</div>
+                           </li>
+                           <li class="calculator1__price-item">
+                               <div class="calculator1__price-title">+ Ремонт</div>
+                               <div class="calculator1__price">Індивідуально</div>
+                           </li>
+                           
+
+                       </ul>
+                   </div>
+               </div>
+        
+
+           <div class="footer">
+               <div class="site-width">
+                   <ul class="footer__list">
+                       <li class="footer__item">
+                           Copyright © 2021 YANK. All rights reserved.
+                       </li>
+                       <li class="footer__item">
+                           <a href="tel:" class="footer__link">+300000000</a>
+                       </li>
+                       <li class="footer__item">
+                           <a href="tel:" class="footer__link">+300000000</a>
+                       </li>
+                       <li class="footer__item">
+                           <a href="mailto:" class="footer__link">yank@gmail.com</a>
+                       </li>
+                       <li class="footer__item">
+                           <a href="" class="footer__icon icon-telegram"></a>
+                           <a href="" class="footer__icon icon-viber"></a>
+                           <a href="" class="footer__icon icon-facebook"></a>
+                           <a href="" class="footer__icon icon-instagram"></a>
+                           <a href="" class="footer__icon icon-tik-tok"></a>
+                       </li>
+                       <li class="footer__item">
+                           Розроблено&nbsp;&nbsp; <a href="https://liddweb.com/" class="footer__link"> liddweb.com</a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+   </div>
+   <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script> 
+   <script src="scripts/wow.min.js"></script>
+   <script>
+       new WOW().init();
+   </script>
+        <script src="scripts/page-script.js"></script>
+    </body>
+</html>
