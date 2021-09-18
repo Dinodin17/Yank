@@ -167,3 +167,71 @@ window.onload = function(){
             select_.onchange();
             salir_select(selc); 
     }
+
+    // Открытие попапа "Подобрать авто"
+function getAuto(){
+    var popup = document.getElementById("get-auto-popup");
+    var block = document.getElementById("block");
+    var close = document.getElementById("close");
+
+    popup.classList.toggle("show");
+    console.log("piy");
+    if(popup.classList.contains("show")){
+        block.classList.toggle("block");
+    }
+
+}
+// ЗАКТЫРИЕ ПОП АПА ПОДОБРАТЬ АВТО
+function getHide(){
+    var popup = document.getElementById("get-auto-popup");
+    var block = document.getElementById("block");
+    popup.classList.remove("show");
+
+    block.classList.remove("block");
+  
+}
+// ЗАКРЫТИЕ ПОДБОРА АВТО НА КЛИК ВНЕ ФОРМЫ
+var popup = document.getElementById("get-auto-popup");
+popup.addEventListener('click', function(event) {
+    var target = event.target;
+
+    if(target.className === "get-auto show"){
+        getHide();
+        console.log('piedsy');
+    }
+});
+
+//ОТКРЫТИЕ ПОП АПА КОНСУЛЬТАЦИИ
+function myConsult() {
+    console.log('piy');
+    var popup = document.getElementById("popupConsult");
+    var block = document.getElementById("block");
+    var close = document.getElementById("close");
+    popup.classList.toggle("show");
+
+    if(popup.classList.contains("show")){
+        block.classList.toggle("block");
+    }
+    close.addEventListener("onclick", function(){
+        popup.classList.toggle("show");
+    })
+    
+}  
+
+//ЗАКРЫТИЕ ПОП АПА КОНСУЛЬТАЦИИ
+function Hide(){
+    var popup = document.getElementById("popupConsult");
+    var block = document.getElementById("block");
+    popup.classList.remove("show");
+    block.classList.remove("block");
+   
+}
+
+// ЗАКРЫТИЕ НА КЛИК ВНЕ ФОРМЫ (КОНСУЛЬТАЦИЯ)
+var popupClose = document.getElementById("popupConsult");
+popupClose.addEventListener('click', function(event) {
+    var target = event.target;
+    if(target.className === "pop-up-concult show"){
+        Hide();
+    }
+});

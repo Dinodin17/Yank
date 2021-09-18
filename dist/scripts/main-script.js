@@ -412,14 +412,27 @@ if ($(window).width() <= '800'){
 
   }
  
-  
+//   const screenWidtht = window.screen.width;
+// const screenHeight = window.screen.height;
+
+// console.log(screenHeight);
+// console.log(screenWidtht);
+
+
+
+
+
+//   showPopup.addEventListener("click", function(){
+    
+//     consult.innerHTML = content;
+
+//   })
 //  Попапы
 
 // Открытие попапа "Подобрать авто"
 function getAuto(){
     var popup = document.getElementById("get-auto-popup");
     var block = document.getElementById("block");
-    var close = document.getElementById("close");
 
     popup.classList.toggle("show");
     console.log("piy");
@@ -433,7 +446,6 @@ function getHide(){
     var popup = document.getElementById("get-auto-popup");
     var block = document.getElementById("block");
     popup.classList.remove("show");
-
     block.classList.remove("block");
   
 }
