@@ -16,203 +16,205 @@
     </head>
     <body id="block">
    <div class="calculator1">
-    <div class="header">
-        <div class="site-width">
-            <a href="#" class="nav__link">
-                <div class="logo"></div>
-            </a>
-            <div class="header_burger">
-                <span></span>
-            </div>
-            <div class="header__wrap">
-                
-                <ul class="nav">
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Головна</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Аукціон</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Авто в Україні</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Калькулятор</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Ексклюзив</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Спецтехніка</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Запчастини</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Контакти</a>
-                    </li>
-                </ul>
+        <div class="header">
+            <div class="site-width">
+                <a href="#" class="nav__link">
+                    <div class="logo"></div>
+                </a>
+                <div class="header_burger">
+                    <span></span>
+                </div>
+                <div class="header__wrap">
+                    
+                    <ul class="nav">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Головна</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Аукціон</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Авто в Україні</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Калькулятор</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Ексклюзив</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Спецтехніка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Запчастини</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакти</a>
+                        </li>
+                    </ul>
 
-                <ul class="header__contact">
-                    <li class="header__contact-item">
-                        <a href="tel:" class="header__contact__link number">+3000000000</a>
-                    </li>
-                    <li class="header__contact-item">
-                        <a href="tel:" class="header__contact__link number">+3000000000</a>
-                    </li>
-                    <li class="header__contact-item">
-                        <a href="#" class="header__contact__link green" onclick="getAuto()">Відстежити авто</a>
-                    </li>
-                    <li class="header__contact-item">
-                        <a href="#" class="header__contact__link green" id="callMe"onclick="myConsult()">Замовити дзвінок</a>
-                    </li>
-                </ul>
-            </div>
-        </div>    
-    </div>
-           <div class="calculator1__title-wrap animate__animated animate__slideInLeft"  data-wow-delay="1s" >
-               <h2 class="calculator1__title title animate__animated animate__fadeIn" data-wow-delay="6s" data-wow-duration="1s">Калькулятор вартості</h2>
-           </div>
-           
+                    <ul class="header__contact">
+                        <li class="header__contact-item">
+                            <a href="tel:" class="header__contact__link number">+3000000000</a>
+                        </li>
+                        <li class="header__contact-item">
+                            <a href="tel:" class="header__contact__link number">+3000000000</a>
+                        </li>
+                        <li class="header__contact-item">
+                            <a href="#" class="header__contact__link green">Відстежити авто</a>
+                        </li>
+                        <li class="header__contact-item">
+                            <a href="#" class="header__contact__link green" id="callMe"onclick="myConsult()">Замовити дзвінок</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+        <div class="calculator1__title-wrap animate__animated animate__slideInLeft"  data-wow-delay="1s" >
+            <h2 class="calculator1__title title animate__animated animate__fadeIn" data-wow-delay="6s" data-wow-duration="1s">Калькулятор вартості</h2>
+        </div>
+           <!-- ФОРМА ДЛЯ ВВОДА ДАННЫХ -->
            <div class="calculator1__wrapper">
-               <div class="calculator1__left-wrap">
-                   <form class="calculator1__form">
-                       <ul class="calculator1__form-list">
-                           <li class="calculator1__form-item">
-                               <div class="calculator1__subtitle">Тип пального</div>
-                               <div class="calculator1__select-width">
-                                   <div class="cont_select_center">
-                                       <div class="select_mate" data-mate-select="active" >
-                                           <select name="" onchange="" onclick="return false;" id="">
-                                               <option value=""  >Бензин</option>
-                                               <option value="1">Дизель</option>
-                                               <option value=""  >Електро</option>
-                                               <option value="1">Гібрид</option>
-                                           </select>
-                                           <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                               <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                                               <path d="M0-.75h24v24H0z" fill="none"/>
-                                           </svg></span> 
-                                           <div class="cont_list_select_mate">
-                                           <ul class="cont_select_int">  </ul> 
-                                           </div>
-                                       </div>
-                                   </div> 
-                               </div>
-                           </li>
-                           <li class="calculator1__form-item">
-                               <div class="calculator1__subtitle">Вартість авто за кордоном</div>
-                               <input type="text" class="calculator1__input input-curr">
-                               <div class="calculator1__subtitle">USD</div>
-                           </li>
-                           <li class="calculator1__form-item">
-                               <div class="calculator1__subtitle">Об'єм двигуна в см<sup><small>3</small></sup></div>
-                               <input type="text" class="calculator1__input">
-                           </li>
-                           <li class="calculator1__form-item">
-                               <div class="calculator1__subtitle">Вік авто</div>
-                               <input type="text" class="calculator1__input">
-                           </li>
-                           <li class="calculator1__form-item">
-                               <div class="calculator1__subtitle">Доставка в порт(штат)</div>
-                               <input type="text" class="calculator1__input">
-                           </li>
-                           <li class="calculator1__buttons">
-                               <input type="button" class="calculator1__button" value="Розрахувати">
-                               <input type="button" class="calculator1__button" value="Підібрати">
-                           </li>
-                       </ul>
-
-                   </form>                           
+            <div class="calculator1__left-wrap">
+                <form class="calculator1__form">
+                    <ul class="calculator1__form-list">
+                        <li class="calculator1__form-item">
+                            <div class="calculator1__subtitle">Тип пального</div>
+                            <div class="calculator1__select-width">
+                                <select class="select" name="language">
+                                    <option class="select-option" disabled>Выбрать</option>
+                                    <option class="select-option" value="">Дизель</option>
+                                    <option class="select-option" value="">говно</option>
+                                    <option class="select-option" value="">говно2</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="calculator1__form-item">
+                            <div class="calculator1__subtitle">Доставка в порт(штат)</div>
+                            <div class="calculator1__select-width">
+                                <select class="select">
+                                    <option class="select-option" disabled>Выбрать</option>
+                                    <option class="select-option" value="">пиу</option>
+                                    <option class="select-option" value="">говно</option>
+                                    <option class="select-option" value="">говно2</option>
+                                    <option class="select-option" value="">говно2</option>
+                                    <option class="select-option" value="">говно2</option>
+                                    <option class="select-option" value="">говно2</option>
+                                    <option class="select-option" value="">говно2</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="calculator1__form-item">
+                            <div class="calculator1__subtitle">Вартість авто за кордоном</div>
+                            <input type="text" class="calculator1__input input-curr">
+                            <div class="calculator1__subtitle">USD</div>
+                        </li>
+                        <li class="calculator1__form-item">
+                            <div class="calculator1__subtitle">Об'єм двигуна в см<sup><small>3</small></sup></div>
+                            <input type="text" class="calculator1__input">
+                        </li>
+                        <li class="calculator1__form-item">
+                            <div class="calculator1__subtitle">Вік авто</div>
+                            <input type="text" class="calculator1__input">
+                        </li>
+                        <li class="calculator1__form-item">
+                            <div class="calculator1__subtitle">Доставка в порт(штат)</div>
+                            <input type="text" class="calculator1__input">
+                        </li>
+                        <li class="calculator1__buttons">
+                            <input type="button" class="calculator1__button" value="Розрахувати">
+                            <input type="button" class="calculator1__button" value="Підібрати">
+                        </li>
+                    </ul>
+                </form>                           
             </div>
-                   <div class="calculator1__right-wrap">
-                      
-                       <ul class="calculator1__price-list">
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">Вартість авто за кордоном</div>
-                               <div class="calculator1__price">1000$</div>
-                           </li>
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">ввізне мито</div>
-                               <div class="calculator1__price">1000$</div>
-                           </li>
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">Акційні збори</div>
-                               <div class="calculator1__price">1000$</div>
-                           </li>
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">НДС</div>
-                               <div class="calculator1__price">1000$</div>
-                           </li>
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">Аукціонні збори</div>
-                               <div class="calculator1__price">1000$</div>
-                           </li>
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">Комісія банку</div>
-                               <div class="calculator1__price">1000$</div>
-                           </li>
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">Послуги дилера</div>
-                               <div class="calculator1__price">1000$</div>
-                           </li>
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">Логістика</div>
-                               <div class="calculator1__price">1000$</div>
-                           </li>
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">Доставка в порт</div>
-                               <div class="calculator1__price">1000$</div>
-                           </li>
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">Контейнер(місце)</div>
-                               <div class="calculator1__price">1000$</div>
-                           </li>
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">Документи, пошта, Fed EX</div>
-                               <div class="calculator1__price">1000$</div>
-                           </li>
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">УТТО</div>
-                               <div class="calculator1__price">1000$</div>
-                           </li>
+                 <!-- БЛОК С ЦЕНАМИ -->
+                <div class="calculator1__right-wrap"> 
+                    <ul class="calculator1__price-list">
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">Вартість авто за кордоном</div>
+                            <div class="calculator1__price">1000$</div>
+                        </li>
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">ввізне мито</div>
+                            <div class="calculator1__price">1000$</div>
+                        </li>
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">Акційні збори</div>
+                            <div class="calculator1__price">1000$</div>
+                        </li>
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">НДС</div>
+                            <div class="calculator1__price">1000$</div>
+                        </li>
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">Аукціонні збори</div>
+                            <div class="calculator1__price">1000$</div>
+                        </li>
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">Комісія банку</div>
+                            <div class="calculator1__price">1000$</div>
+                        </li>
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">Послуги дилера</div>
+                            <div class="calculator1__price">1000$</div>
+                        </li>
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">Логістика</div>
+                            <div class="calculator1__price">1000$</div>
+                        </li>
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">Доставка в порт</div>
+                            <div class="calculator1__price">1000$</div>
+                        </li>
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">Контейнер(місце)</div>
+                            <div class="calculator1__price">1000$</div>
+                        </li>
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">Документи, пошта, Fed EX</div>
+                            <div class="calculator1__price">1000$</div>
+                        </li>
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">УТТО</div>
+                            <div class="calculator1__price">1000$</div>
+                        </li>
                            <li class="calculator1__price-item">
                                <div class="calculator1__price-title">Погрузка на автовіз</div>
                                <div class="calculator1__price">1000$</div>
-                           </li>
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">Парковка на складі</div>
-                               <div class="calculator1__price">1000$</div>
-                           </li>
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">Парковка на місці</div>
-                               <div class="calculator1__price">1000$</div>
-                           </li>
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">Послуги за роботу</div>
-                               <div class="calculator1__price">1000$</div>
-                           </li>
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">Сертифікація</div>
-                               <div class="calculator1__price">1000$</div>
-                           </li>
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">Підсумкова вартість</div>
-                               <div class="calculator1__price">1000$</div>
-                           </li>
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">Постановка на облік</div>
-                               <div class="calculator1__price">1000$</div>
-                           </li>
-                           <li class="calculator1__price-item">
-                               <div class="calculator1__price-title">+ Ремонт</div>
-                               <div class="calculator1__price">Індивідуально</div>
-                           </li>
+                        </li>
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">Парковка на складі</div>
+                            <div class="calculator1__price">1000$</div>
+                        </li>
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">Парковка на місці</div>
+                            <div class="calculator1__price">1000$</div>
+                        </li>
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">Послуги за роботу</div>
+                            <div class="calculator1__price">1000$</div>
+                        </li>
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">Сертифікація</div>
+                            <div class="calculator1__price">1000$</div>
+                        </li>
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">Підсумкова вартість</div>
+                            <div class="calculator1__price">1000$</div>
+                        </li>
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">Постановка на облік</div>
+                            <div class="calculator1__price">1000$</div>
+                        </li>
+                        <li class="calculator1__price-item">
+                            <div class="calculator1__price-title">+ Ремонт</div>
+                            <div class="calculator1__price">Індивідуально</div>
+                        </li>
                        </ul>
                    </div>
                </div>
-        
-
+            <!-- ФУТЕР -->
            <div class="footer">
                <div class="site-width">
                    <ul class="footer__list">
@@ -242,189 +244,6 @@
                </div>
            </div>
    </div>
-      <!-- Підібремо вам авто за лічені хвилини -->
-      <div class="get-auto" id="get-auto-popup">
-        <div class="get-auto__wrapper">
-            <div class="close" id="close" onclick="getHide()">
-                <div class="close1"></div>
-                <div class="close2"></div>
-            </div>
-            <h2 class="get-auto__title">Підібремо вам авто за лічені хвилини</h2>
-
-            <div class="get-auto__desc">Заповніть поля нижче і отримайте варіанти автомобілів</div>
-            <div class="get-auto__choose">Який тип кузову вам подобається?</div>
-            <ul class="get-auto__car-list">
-                <li class="get-auto__car-item">
-                    <div class="popup-img-wrap" id="chosenCar">
-                        <img src="images/photo.png" alt="" class="get-auto__image">
-                    </div>
-                        <div class="get-auto__body">Седан</div>
-                </li>
-                <li class="get-auto__car-item">
-                    <div class="popup-img-wrap" id="chosenCar">
-                        <img src="images/photo1.png" alt="" class="get-auto__image">
-                    </div>
-                    <div class="get-auto__body">Мінівен</div>
-                </li>
-                <li class="get-auto__car-item">
-                    <div class="popup-img-wrap" id="chosenCar">
-                    <img src="images/photo2.png" alt="" class="get-auto__image">
-                    </div>
-                    <div class="get-auto__body">Хетчбек</div>
-                </li>
-                <li class="get-auto__car-item">
-                    <div class="popup-img-wrap" id="chosenCar">
-                    <img src="images/photo3.png" alt="" class="get-auto__image">
-                    </div>
-                    <div class="get-auto__body">Купе</div>
-                </li>
-
-            </ul>
-            <ul class="get-auto__car-list">
-                <li class="get-auto__car-item">
-                    <div class="popup-img-wrap" id="chosenCar">                 
-                        <img src="images/photo4.png" alt="" class="get-auto__image">
-                    </div>
-                    <div class="get-auto__body">Кросовер</div>
-                </li>
-                <li class="get-auto__car-item">
-                    <div class="popup-img-wrap" id="chosenCar">
-                        <img src="images/photo5.png" alt="" class="get-auto__image">
-                        </div>
-                    <div class="get-auto__body">Кабріолет</div>
-                </li>
-                <li class="get-auto__car-item">
-                    <div class="popup-img-wrap" id="chosenCar">
-                         <img src="images/photo6.png" alt="" class="get-auto__image">
-                    </div>
-                   
-                    <div class="get-auto__body">Бус</div>
-                </li>
-                <li class="get-auto__car-item">
-                    <div class="popup-img-wrap" id="chosenCar">
-                        <img src="images/photo7.png" alt="" class="get-auto__image">
-                    </div>
-                    
-                    <div class="get-auto__body">Пікап</div>
-                </li>
-
-            </ul>
-            <h3 class="get-auto__subtitle">Рік випуску</h3>
-            
-            <div class="get-auto__item date">
-
-                <div class="get-auto__item-wrap data">
-                    <span class="get-auto__subtitle">Від</span>
-                     <div class="cont_select_center">
-                         <div class="select_mate" data-mate-select="active" >
-                             <select name="" onchange="" onclick="return false;" id="">
-                                 <option value=""  >100$</option>
-                                 <option value="1">Option1</option>
-                             </select>
-                             <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                 <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                                 <path d="M0-.75h24v24H0z" fill="none"/>
-                             </svg></span> 
-                             <div class="cont_list_select_mate">
-                             <ul class="cont_select_int">  </ul> 
-                             </div>
-                         </div>
-                     </div> 
-                </div>
-                
-                <div class="get-auto__item-wrap data">
-                    <span class="get-auto__subtitle">До</span>
-                     <div class="cont_select_center">
-                         <div class="select_mate" data-mate-select="active" >
-                             <select name="" onchange="" onclick="return false;" id="">
-                                 <option value=""  >1000$</option>
-                                 <option value="1">Option1</option>
-                             </select>
-                             <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                 <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                                 <path d="M0-.75h24v24H0z" fill="none"/>
-                             </svg></span> 
-                             <div class="cont_list_select_mate">
-                             <ul class="cont_select_int">  </ul> 
-                             </div>
-                         </div>
-                     </div> 
-                 </div>
-            </div>
-
-            <h3 class="get-auto__subtitle">Ваш бюджет</h3>
-
-            <div class="get-auto__item date">
-
-                <div class="get-auto__item-wrap data ">
-                    <span class="get-auto__subtitle">Від</span>
-                     <div class="cont_select_center">
-                         <div class="select_mate" data-mate-select="active" >
-                             <select name="" onchange="" onclick="return false;" id="">
-                                 <option value=""  >2010</option>
-                                 <option value="1">Option1</option>
-                             </select>
-                             <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                 <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                                 <path d="M0-.75h24v24H0z" fill="none"/>
-                             </svg></span> 
-                             <div class="cont_list_select_mate">
-                             <ul class="cont_select_int">  </ul> 
-                             </div>
-                         </div>
-                     </div> 
-                </div>
-                
-                <div class="get-auto__item-wrap data">
-                    <span class="get-auto__subtitle">До</span>
-                     <div class="cont_select_center">
-                         <div class="select_mate" data-mate-select="active" >
-                             <select name="" onchange="" onclick="return false;" id="">
-                                 <option value=""  >2010</option>
-                                 <option value="1">Option1</option>
-                             </select>
-                             <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                 <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                                 <path d="M0-.75h24v24H0z" fill="none"/>
-                             </svg></span> 
-                             <div class="cont_list_select_mate">
-                             <ul class="cont_select_int">  </ul> 
-                             </div>
-                         </div>
-                     </div> 
-                 </div>
-            </div>
-
-            <h3 class="get-auto__subtitle">Бажана марка</h3>
-            <div class="cont_select_center">
-                <div class="select_mate" data-mate-select="active" >
-                    <select name="" onchange="" onclick="return false;" id="">
-                        <option value=""  >Будь-яка</option>
-                        <option value="1">Option1</option>
-                    </select>
-                    <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                        <path d="M0-.75h24v24H0z" fill="none"/>
-                    </svg></span> 
-                    <div class="cont_list_select_mate">
-                    <ul class="cont_select_int">  </ul> 
-                    </div>
-                </div>
-            </div> 
-
-            <h3 class="get-auto__subtitle">Ваші контакты</h3>
-           <form class="get-auto__form">
-               <input type="text" class="get-auto__input" placeholder="Ім'я">
-
-                <input type="text" class="get-auto__input" placeholder="Телефон">
-                <div class="get-auto__desc">Ми подзвонимо вам, щоб озвучити варіанти підібраних авто.</div>
-
-                <input type="submit" value="Підібрати" class=" pop-up__button button"></input>
-           </form>
-            
-            <div class="get-auto__desc conf">Ваші дані захищені політикою конфіденційності</div>
-        </div>
-    </div>
     <!-- ПОП АП КОНСУЛЬТАЦИЯ -->
 <div class="pop-up-concult" id="popupConsult">
 
