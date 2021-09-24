@@ -1377,14 +1377,11 @@ body {
 }
 
 .contact__inputs-wrap {
-  position: relative;
-}
-
-.form__item {
-  height: 36px;
-  margin-bottom: 20px;
   border-radius: 3px;
-  padding: 15px 3px 0;
+  width: 100%;
+  position: relative;
+  background-color: #ffffff;
+  margin-bottom: 20px;
   color: black;
   font-size: 18px;
 }
@@ -1408,6 +1405,44 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.cool-input__input {
+  background: none;
+  width: 100%;
+  padding: 15px 3px 0;
+  height: 36px;
+  position: relative;
+  z-index: 2;
+  font-size: 16px;
+}
+
+.cool-input__input:focus {
+  outline: none;
+}
+
+.cool-input__placeholder {
+  border: none;
+  background: none;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  padding-left: 5px;
+  left: 0;
+  top: 50%;
+  line-height: 1em;
+  margin-top: -0.5em;
+  color: #636260;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.cool-input__input_filled + .cool-input__placeholder,
+.cool-input__input:focus + .cool-input__placeholder {
+  font-size: 0.8em;
+  top: 0;
+  margin-top: 0.1em;
 }
 
 .footer__list {
@@ -2740,16 +2775,58 @@ body {
   margin-bottom: 25px;
 }
 
+.exclusive .nav__link {
+  color: white;
+  -webkit-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.exclusive .nav__link:hover {
+  color: #5e5d5d;
+}
+
+.exclusive .number {
+  color: white;
+  -webkit-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.exclusive .number:hover {
+  color: #6dd14e;
+}
+
+.exclusive .green {
+  color: #6dd14e;
+  -webkit-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.exclusive .green:hover {
+  color: white;
+}
+
+.exclusive .header {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .exclusive__banner {
   background: url(../images/exclusive-ban.jpg);
   background-size: cover;
   height: 100vh;
   width: 100%;
   margin-bottom: 40px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .exclusive__title {
-  padding-top: 45vh;
+  padding-top: 60vh;
   text-align: center;
   font-family: 'Play';
   font-size: calc(46px + 16*(100vw/1920));
@@ -2800,10 +2877,6 @@ body {
   font-size: 22px;
 }
 
-.exclusive .header {
-  background-color: transparent;
-}
-
 .exclusive__list {
   height: 500px;
   -webkit-box-align: center;
@@ -2852,6 +2925,12 @@ body {
           transform: scale(1.2);
 }
 
+.exclusive__image-wrap {
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+}
+
 .exclusive__subtitle {
   color: #000000;
   font-size: 20px;
@@ -2862,10 +2941,6 @@ body {
   color: #000000;
   font-size: 20px;
   text-align: right;
-}
-
-.exclusive .nav__link {
-  color: white;
 }
 
 .spare-parts .nav__link {
@@ -2882,6 +2957,11 @@ body {
   height: 100vh;
   width: 100%;
   margin-bottom: 40px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .spare-parts__rem {
@@ -2902,8 +2982,30 @@ body {
   height: 100vh;
 }
 
+.special .nav__link {
+  color: white;
+  -webkit-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.special .nav__link:hover {
+  color: black;
+}
+
+.special .header__contact__link {
+  color: white;
+  -webkit-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.special .header__contact__link:hover {
+  color: #6dd14e;
+}
+
 .special .header {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .special__banner {
@@ -2912,6 +3014,11 @@ body {
   height: 100vh !important;
   width: 100%;
   margin-bottom: 40px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .calculator1 {
@@ -3786,12 +3893,11 @@ body {
 
 .new-select__list {
   position: absolute;
-  top: 45px;
+  top: 35px;
   left: 0;
-  height: 120px;
+  max-height: 120px;
   overflow: scroll;
   overflow-x: hidden;
-  border: 1px solid #ced4da;
   cursor: pointer;
   width: 100%;
   z-index: 2;
