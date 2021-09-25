@@ -1733,9 +1733,23 @@ body {
   margin-bottom: 15px;
   text-align: center;
   padding-top: 5px;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.side-panel__item:hover {
+  background-color: #a7a8a7;
+}
+
+.side-panel__item:hover .side-panel__link {
+  color: white;
 }
 
 .side-panel__link {
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   font-size: 18px;
   color: black;
 }
@@ -1755,6 +1769,14 @@ body {
   font-family: 'Play';
   font-size: 30px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.side-panel__logout:hover {
+  background-color: #6dd14e;
+  color: #000000;
 }
 
 .admin-auto-in-work {
@@ -1771,7 +1793,7 @@ body {
 .admin-auto-in-work__table-wrap {
   width: 80%;
   margin-top: 40px;
-  height: 80vh;
+  height: 70vh;
   overflow-y: scroll;
 }
 
@@ -1808,6 +1830,30 @@ body {
 .admin-auto-in-work__table-button {
   font-size: 22px;
   color: #6dd14e;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+
+.admin-auto-in-work__table-button::after {
+  display: block;
+  content: "";
+  background-color: #6dd14e;
+  height: 2px;
+  width: 0%;
+  left: 50%;
+  position: absolute;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.admin-auto-in-work__table-button:hover::after {
+  width: 100%;
 }
 
 .admin-auto-in-work__button-add {
@@ -1825,6 +1871,14 @@ body {
   font-family: 'Play';
   font-size: 28px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.admin-auto-in-work__button-add a:hover {
+  background-color: #6dd14e;
+  color: #000000;
 }
 
 .admin-auto-in-work__table-head th:nth-child(1) {
@@ -1901,7 +1955,31 @@ body {
 
 .admin-orders__table-button {
   font-size: 22px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   color: #6dd14e;
+  position: relative;
+}
+
+.admin-orders__table-button::after {
+  display: block;
+  content: "";
+  background-color: #6dd14e;
+  height: 2px;
+  width: 0%;
+  left: 50%;
+  position: absolute;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.admin-orders__table-button:hover::after {
+  width: 100%;
 }
 
 .admin-all-users {
@@ -1955,23 +2033,6 @@ body {
 .admin-all-users__table-button {
   font-size: 22px;
   color: #6dd14e;
-}
-
-.admin-all-users__button-add {
-  width: 97%;
-  text-align: right;
-  position: absolute;
-  top: 100px;
-}
-
-.admin-all-users__button-add a {
-  border-radius: 2px;
-  padding: 5px 19px 6px;
-  background-color: #eeeeee;
-  color: #6dd14e;
-  font-family: 'Play';
-  font-size: 28px;
-  cursor: pointer;
 }
 
 .icon-user {
@@ -2624,6 +2685,10 @@ body {
   margin-right: 15px;
 }
 
+.admin-gallery__table-button:hover {
+  background-color: #96d382;
+}
+
 .admin-gallery-but {
   margin-top: 30px;
   display: -webkit-box;
@@ -2642,6 +2707,14 @@ body {
   font-size: 22px;
   cursor: pointer;
   margin-right: 15px;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.admin-gallery-button:hover {
+  background-color: #6dd14e;
+  color: white;
 }
 
 .auto-in-work-item .admin__side-panel {

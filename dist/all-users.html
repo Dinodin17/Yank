@@ -1,104 +1,109 @@
- <!-- ЗАМОВЛЕННЯ -->
- <!DOCTYPE html>
- <html>
-     <head>
-         <meta charset="utf-8">
-         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-         <title>Користувачі</title>
-         <meta name="description" content="">
-         <meta name="viewport" content="width=device-width, initial-scale=1">
-         <link rel="preload" href="css/style.css" as="style">
-         <link rel="preload" href="scripts/admin-script.js" as="script">
+<!-- ЗАМОВЛЕННЯ -->
+<!DOCTYPE html>
+<html>
 
-         <link rel="stylesheet" href="css/style.css">
-     </head>
-     <body>
-     <div class="admin-all-users">
-         <div class="admin-header">
-             <img src="images/logo.png" alt="" class="admin-header__logo">
-             <div class="admin__header-log">
-                 <div class="admin__header-icon icon-user"></div>   
-                 <div class="admin__header-name desc2">Максим</div>        
-              </div>
-         </div>
-         <h1 class="admin__title">Всі користувачі</h1>
-         <div class="admin-auto-in-work__button-add">
-            <a href="#">Додати</a>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Користувачі</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="scripts/admin-script.js" as="script">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="admin-all-users">
+        <div class="admin-header">
+            <img src="images/logo.png" alt="" class="admin-header__logo">
+            <div class="admin__header-log">
+                <div class="admin__header-icon icon-user"></div>
+                <div class="admin__header-name desc2">Максим</div>
+            </div>
         </div>
-         <div class="admin-all-users__wrapper">
-         <div class="admin__side-panel">
-             <ul class="side-panel__list">
-                 <li class="side-panel__item">
-                     <a href="" class="side-panel__link">Користувач</a>
-                 </li>
-                 <li class="side-panel__item">
-                     <a href="" class="side-panel__link">Всі користувачі</a>
-                 </li>
-                 <li class="side-panel__item">
-                     <a href="" class="side-panel__link">Авто в наявності</a>
-                 </li>
-                 <li class="side-panel__item">
-                     <a href="" class="side-panel__link">Автосалон</a>
-                 </li>
-                 <li class="side-panel__item">
-                     <a href="" class="side-panel__link">Замовлення</a>
-                 </li>
-                 <li class="side-panel__item">
-                     <a href="" class="side-panel__link">CRM</a>
-                 </li>
-                 <li class="side-panel__item">
-                     <a href="" class="side-panel__link">Авто в роботі</a>
-                 </li>
-                 <li class="side-panel__item">
-                     <a href="" class="side-panel__link">Налаштування</a>
-                 </li>
-             </ul>
-             <div class="side-panel__button">
-                 <a href="#" class="side-panel__logout">Вихід</a>
-             </div>
-         </div>
-         <div class="admin-all-users__table-wrap">
-             <table class="admin-all-users__table">
-                 
-                 <thead class="admin-all-users__table-head">
-                     <tr class="admin-all-users__table-title">
-                         <th scope="col">Ім'я</th>
-                         <th scope="col">Пошта</th>
-                         <th scope="col" colspan="2">Права</th>
-                     </tr>
-                 </thead>
- 
-                 <tbody>
-                     <tr class="admin-all-users__table-list">
-                        <td class="admin-all-users__table-item">Максим</td>
-                         <td class="admin-all-users__table-item">piypiy@gmail.com</td>
-                         <td class="admin-all-users__table-item">Адміністратор</td>
-                         <td class="admin-all-users__table-item-but">
-                             <a href="#" class="admin-orders__table-button">Детальніше</a>
-                         </td>
-                     </tr>
- 
-                     <tr class="admin-all-users__table-list">
-                        <td class="admin-all-users__table-item">Максим</td>
-                         <td class="admin-all-users__table-item">piypiy@gmail.com</td>
-                         <td class="admin-all-users__table-item">Адміністратор</td>
-                         <td class="admin-all-users__table-item-but">
-                             <a href="#" class="admin-orders__table-button">Детальніше</a>
-                         </td>
-                     </tr>
-                     <tr class="admin-all-users__table-list">
-                        <td class="admin-all-users__table-item">Максим</td>
-                         <td class="admin-all-users__table-item">piypiy@gmail.com</td>
-                         <td class="admin-all-users__table-item">Адміністратор</td>
-                         <td class="admin-all-users__table-item-but">
-                             <a href="#" class="admin-orders__table-button">Детальніше</a>
-                         </td>
-                     </tr>
-                 </tbody>
-             </table>
-         </div>
-     </div>
-     </div>
-         <script src="scripts/admin-script.js"></script>
-     </body>
- </html>
+        <h1 class="admin__title">Всі користувачі</h1>
+
+        <div class="admin-auto-in-work__button-add">
+            <a href="#" class="admin-auto-in-work__button-link">Додати</a>
+        </div>
+        <div class="admin-all-users__wrapper">
+            <div class="admin__side-panel">
+                <ul class="side-panel__list">
+                    <li class="side-panel__item">
+                        <a href="" class="side-panel__link">Користувач</a>
+                    </li>
+                    <li class="side-panel__item">
+                        <a href="" class="side-panel__link">Всі користувачі</a>
+                    </li>
+                    <li class="side-panel__item">
+                        <a href="" class="side-panel__link">Авто в наявності</a>
+                    </li>
+                    <li class="side-panel__item">
+                        <a href="" class="side-panel__link">Автосалон</a>
+                    </li>
+                    <li class="side-panel__item">
+                        <a href="" class="side-panel__link">Замовлення</a>
+                    </li>
+                    <li class="side-panel__item">
+                        <a href="" class="side-panel__link">CRM</a>
+                    </li>
+                    <li class="side-panel__item">
+                        <a href="" class="side-panel__link">Авто в роботі</a>
+                    </li>
+                    <li class="side-panel__item">
+                        <a href="" class="side-panel__link">Налаштування</a>
+                    </li>
+                </ul>
+                <div class="side-panel__button">
+                    <a href="#" class="side-panel__logout">Вихід</a>
+                </div>
+            </div>
+            <div class="admin-all-users__table-wrap">
+                <table class="admin-all-users__table">
+
+                    <thead class="admin-all-users__table-head">
+                        <tr class="admin-all-users__table-title">
+                            <th scope="col">Ім'я</th>
+                            <th scope="col">Пошта</th>
+                            <th scope="col" colspan="2">Права</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="admin-all-users__table-list">
+                            <td class="admin-all-users__table-item">Максим</td>
+                            <td class="admin-all-users__table-item">piypiy@gmail.com</td>
+                            <td class="admin-all-users__table-item">Адміністратор</td>
+                            <td class="admin-all-users__table-item-but">
+                                <a href="#" class="admin-orders__table-button">Детальніше</a>
+                            </td>
+                        </tr>
+
+                        <tr class="admin-all-users__table-list">
+                            <td class="admin-all-users__table-item">Максим</td>
+                            <td class="admin-all-users__table-item">piypiy@gmail.com</td>
+                            <td class="admin-all-users__table-item">Адміністратор</td>
+                            <td class="admin-all-users__table-item-but">
+                                <a href="#" class="admin-orders__table-button">Детальніше</a>
+                            </td>
+                        </tr>
+                        <tr class="admin-all-users__table-list">
+                            <td class="admin-all-users__table-item">Максим</td>
+                            <td class="admin-all-users__table-item">piypiy@gmail.com</td>
+                            <td class="admin-all-users__table-item">Адміністратор</td>
+                            <td class="admin-all-users__table-item-but">
+                                <a href="#" class="admin-orders__table-button">Детальніше</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+    <script src="scripts/admin-script.js"></script>
+</body>
+
+</html>
