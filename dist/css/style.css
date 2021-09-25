@@ -97,7 +97,7 @@ textarea:focus {
 }
 
 .button:hover {
-  background: #96d382;
+  background: #a0d390;
 }
 
 .active {
@@ -1531,6 +1531,11 @@ body {
 .admin-enter {
   height: 100%;
   width: 100%;
+}
+
+.admin-enter .contact__inputs-wrap {
+  background-color: #eeeeee;
+  height: 40px;
 }
 
 .admin-enter__logo {

@@ -1,29 +1,28 @@
 // уменьшение хедера на скролл
-if ($(window).width() > '799'){
+if ($(window).width() > '799') {
     var cbpAnimatedHeader = (function() {
 
         var docElem = document.documentElement,
-            header = document.querySelector( '.header' ),
+            header = document.querySelector('.header'),
             didScroll = false,
             changeHeaderOn = 100;
-            
+
 
         function init() {
-            window.addEventListener( 'scroll', function( event ) {
-                if( !didScroll ) {
+            window.addEventListener('scroll', function(event) {
+                if (!didScroll) {
                     didScroll = true;
-                    setTimeout( scrollPage, 100 );
+                    setTimeout(scrollPage, 100);
                 }
-            }, false );
+            }, false);
         }
 
         function scrollPage() {
             var sy = scrollY();
-            if ( sy >= changeHeaderOn ) {
-                header.classList.add('header-shrink' );
-            }
-            else {
-                header.classList.remove('header-shrink' );
+            if (sy >= changeHeaderOn) {
+                header.classList.add('header-shrink');
+            } else {
+                header.classList.remove('header-shrink');
             }
             didScroll = false;
         }
@@ -35,7 +34,7 @@ if ($(window).width() > '799'){
         init();
 
     })();
-} 
+}
 
 // меню бургер
 // -------------------------------------------------
@@ -45,18 +44,18 @@ let header_menu = document.querySelector('.header__wrap');
 let back = document.querySelector('body');
 let header_list = document.querySelector('.nav');
 
-header_burger.onclick = function () {
+header_burger.onclick = function() {
     header_burger.classList.toggle('active_m');
     header_menu.classList.toggle('active_m');
-   
+
     back.classList.toggle('lock');
 }
-header_list.onclick = function () {
+header_list.onclick = function() {
     header_list.classList.remove('active_m');
-  
+
     header_burger.classList.remove('active_m');
     header_menu.classList.remove('active_m');
-   
+
     back.classList.remove('lock');
 }
 
@@ -107,3 +106,21 @@ header_list.onclick = function () {
 //         $(".polzunok-5").slider("values", 1, input_right);
 //     }
 // });
+
+var greenBut = document.querySelectorAll(".button");
+
+[].forEach.call(greenBut, function(el) {
+    el.addEventListener('click', function(e) {
+        el.classList.add('active');
+    })
+});
+
+// Плейсхолдер в формах
+$('.cool-input__input').on('input', function() {
+    var $this = $(this);
+    if ($this.val() == '') {
+        $this.removeClass('cool-input__input_filled');
+    } else {
+        $this.addClass('cool-input__input_filled');
+    }
+});

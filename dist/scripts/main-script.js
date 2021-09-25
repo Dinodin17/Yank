@@ -222,16 +222,12 @@ const banner = new Swiper('.slider', {
 //--------------------------------------------------------------
 // Слайдер "Как работает Янк?"
 const swiper = new Swiper('.stages-slider', {
-
-
-
     breakpoints: {
         // when window width is >= 320px
         767: {
             direction: 'vertical',
         },
     },
-
     autoplay: {
         delay: 20000,
         stopOnLastSlide: false,
@@ -328,7 +324,7 @@ swiper.on('slideChange', function() {
 //     focusOnSelect: true
 //   });
 
-
+// на клик белый шрифт кнопке
 var greenBut = document.querySelectorAll(".button");
 
 [].forEach.call(greenBut, function(el) {
@@ -392,8 +388,6 @@ if ($(window).width() <= '800') {
     });
 
     const swiper_about_bottom = new Swiper('.about-swiper-bottom', {
-
-
         autoplay: {
             delay: 7000,
             stopOnLastSlide: false,
