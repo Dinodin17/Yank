@@ -1,30 +1,32 @@
- <!-- АДМИНКА АВТОСАЛОН -->
+<!-- АДМИНКА АВТОСАЛОН -->
 
- <!DOCTYPE html>
- <html>
-     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Yank</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preload" href="css/style.css" as="style">
-        <link rel="preload" href="css/slick.css" as="style">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/slick.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-      
-     </head>
-     <body>
-     <div class="edit-item">
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yank</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/slick.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <div class="edit-item">
         <div class="admin-header">
             <img src="images/logo.png" alt="" class="admin-header__logo">
             <div class="admin__header-log">
-                <div class="admin__header-icon icon-user"></div>   
-                <div class="admin__header-name desc2">Максим</div>        
-             </div>
+                <div class="admin__header-icon icon-user"></div>
+                <div class="admin__header-name desc2">Максим</div>
+            </div>
         </div>
-      
+
         <div class="edit-item__wrapper">
             <div class="admin__side-panel">
                 <ul class="side-panel__list">
@@ -54,17 +56,16 @@
                     </li>
                 </ul>
                 <div class="side-panel__button">
-                 <a href="#" class="side-panel__logout">Вихід</a>
+                    <a href="#" class="side-panel__logout">Вихід</a>
                 </div>
             </div>
 
-
             <div class="edit-item__wrapper-right">
-                
+
                 <div class="edit-item__wrapper-width">
                     <div class="edit-item-slider-wrap">
                         <div class="edit-item__slider slider-for">
-                        
+
                             <div class="edit-item__slide-for">
                                 <img src="images/salon-item3.jpg" class="edit-item__img">
                             </div>
@@ -77,10 +78,10 @@
                             <div class="edit-item__slide-for">
                                 <img src="images/salon-item.jpg" class="edit-item__img">
                             </div>
-        
+
                         </div>
                         <div class="edit-item__slider-nav slider-nav">
-                       
+
                             <div class="edit-item__slide-nav">
                                 <img src="images/salon-item3.jpg" class="edit-item__img-nav">
                             </div>
@@ -93,150 +94,102 @@
                             <div class="edit-item__slide-nav">
                                 <img src="images/salon-item.jpg" class="edit-item__img-nav">
                             </div>
-              
+
                         </div>
                         <div class="galery">
                             <a href="" class="galery-button">Галерея</a>
                         </div>
                     </div>
-                    
+
                     <div class="edit-item__wrapper-form">
                         <form>
                             <ul class="edit-item__form-list">
-                                <li class="edit-item__form-item">
-                                    <input type="text" placeholder="Ім'я" class="edit-item__form-input">
+                                <li class="edit-item__form-item-name">
+                                    <div class="contact__inputs-wrap ">
+                                        <input type="text" required class="cool-input__input" />
+                                        <span class="cool-input__placeholder">Назва</span>
+                                    </div>
                                 </li>
-                                <li class="edit-item__form-item">
-                                    <input type="text" placeholder="Ціна" class="edit-item__form-input edit-price">
+                                <li class="edit-item__form-item-price">
+                                    <div class="contact__inputs-wrap ">
+                                        <input type="text" required class="cool-input__input" />
+                                        <span class="cool-input__placeholder">Ціна</span>
+                                    </div>
                                 </li>
                                 <li class="edit-item__form-item">
                                     <ul class="edit-item__select-list">
                                         <li class="edit-item__select-item">
                                             <div class="flex">
                                                 <span class=" icon-auto icon-calendar"></span>
-                                                <div class="cont_select_center">
-                                                    <div class="select_mate" data-mate-select="active" >
-                                                        <select name="" onchange="" onclick="return false;" id="">
-                                                            <option value=""  >2017</option>
-                                                            <option value="1">Option1</option>
-                                                            <option value="1">Option2</option>
-                                                        </select>
-                                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                                                            <path d="M0-.75h24v24H0z" fill="none"/>
-                                                        </svg></span> 
-                                                        <div class="cont_list_select_mate">
-                                                        <ul class="cont_select_int">  </ul> 
-                                                        </div>
-                                                    </div>
+                                                <div class="edit-select-wrap">
+                                                    <span class="icon-caret-down-solid"></span>
+                                                    <select class="edit-select">
+                                                        <option selected>2017</option>
+                                                        <option>2018</option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                                
+
                                             <div class="flex">
                                                 <span class="icon-auto icon-motor"></span>
-                                                <div class="cont_select_center">
-                                                    <div class="select_mate" data-mate-select="active" >
-                                                        <select name="" onchange="" onclick="return false;" id="">
-                                                            <option value=""  >Бензин</option>
-                                                            <option value="1">Option1</option>
-                                                            <option value="1">Option2</option>
-                                                        </select>
-                                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                                                            <path d="M0-.75h24v24H0z" fill="none"/>
-                                                        </svg></span> 
-                                                        <div class="cont_list_select_mate">
-                                                        <ul class="cont_select_int">  </ul> 
-                                                        </div>
-                                                    </div>
+                                                <div class="edit-select-wrap">
+                                                    <span class="icon-caret-down-solid"></span>
+                                                    <select class="edit-select">
+                                                        <option selected>Бензин</option>
+                                                        <option>2018</option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                
+
                                             <div class="flex">
                                                 <span class="icon-auto icon-gas-station"></span>
 
-                                                <div class="cont_select_center">
-                                                    <div class="select_mate" data-mate-select="active" >
-                                                        <select name="" onchange="" onclick="return false;" id="">
-                                                                <option value=""  >40 300km</option>
-                                                                <option value="1">Option1</option>
-                                                                <option value="1">Option2</option>
-                                                        </select>
-                                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                                                            <path d="M0-.75h24v24H0z" fill="none"/>
-                                                        </svg></span> 
-                                                        <div class="cont_list_select_mate">
-                                                        <ul class="cont_select_int">  </ul> 
-                                                        </div>
-                                                    </div>
-                                                </div>                                                    
-                                            </div>               
-                                                
+                                                <div class="edit-select-wrap">
+                                                    <span class="icon-caret-down-solid"></span>
+                                                    <select class="edit-select">
+                                                        <option selected>40 300km</option>
+                                                        <option>20 300km</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
                                         </li>
 
                                         <li class="edit-item__select-item">
                                             <div class="flex">
                                                 <span class="icon-auto icon-chassis"></span>
 
-                                                <div class="cont_select_center">
-                                                    <div class="select_mate" data-mate-select="active" >
-                                                        <select name="" onchange="" onclick="return false;" id="">
-                                                            <option value=""  >1.6 L</option>
-                                                            <option value="1">Option1</option>
-                                                            <option value="1">Option2</option>
-                                                        </select>
-                                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                                                            <path d="M0-.75h24v24H0z" fill="none"/>
-                                                        </svg></span> 
-                                                        <div class="cont_list_select_mate">
-                                                        <ul class="cont_select_int">  </ul> 
-                                                        </div>
-                                                    </div>
+                                                <div class="edit-select-wrap">
+                                                    <span class="icon-caret-down-solid"></span>
+                                                    <select class="edit-select">
+                                                        <option selected>1.6L</option>
+                                                        <option>2L</option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="flex">
                                                 <span class="icon-auto icon-speedometer"></span>
-                                                <div class="cont_select_center">
-                                                    <div class="select_mate" data-mate-select="active" >
-                                                        <select name="" onchange="" onclick="return false;" id="">
-                                                            <option value=""  >Повний</option>
-                                                            <option value="1">Option1</option>
-                                                            <option value="1">Option2</option>
-                                                        </select>
-                                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                                                            <path d="M0-.75h24v24H0z" fill="none"/>
-                                                        </svg></span> 
-                                                        <div class="cont_list_select_mate">
-                                                        <ul class="cont_select_int">  </ul> 
-                                                        </div>
-                                                    </div>
+                                                <div class="edit-select-wrap">
+                                                    <span class="icon-caret-down-solid"></span>
+                                                    <select class="edit-select">
+                                                        <option selected>Повний</option>
+                                                        <option>2</option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                           
+
                                             <div class="flex">
                                                 <span class="icon-auto icon-transmission"></span>
-                                                <div class="cont_select_center">
-                                                    <div class="select_mate" data-mate-select="active" >
-                                                        <select name="" onchange="" onclick="return false;" id="">
-                                                            <option value=""  >Автомат</option>
-                                                            <option value="1">Option1</option>
-                                                            <option value="1">Option2</option>
-                                                        </select>
-                                                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                                                            <path d="M0-.75h24v24H0z" fill="none"/>
-                                                        </svg></span> 
-                                                        <div class="cont_list_select_mate">
-                                                        <ul class="cont_select_int">  </ul> 
-                                                        </div>
-                                                    </div>
+                                                <div class="edit-select-wrap">
+                                                    <span class="icon-caret-down-solid"></span>
+                                                    <select class="edit-select">
+                                                        <option selected>Автомат</option>
+                                                        <option>Механіка</option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                           
+
                                         </li>
                                     </ul>
                                 </li>
@@ -250,24 +203,25 @@
                                 </li>
 
                                 <li class="edit-item__form-item-but">
-                                    <input type="button" value="Видалити" class="edit-item__form-button">
-                                    <input type="button" value="Зберегти" class="edit-item__form-button">
+                                    <button class="edit-item__form-button">Відмінити</button>
+                                    <button class="edit-item__form-button save">Зберегти</button>
                                 </li>
-                                
+
                             </ul>
                         </form>
 
-                    </div>  
-                
+                    </div>
+
                 </div>
             </div>
         </div>
-     </div>
+    </div>
 
 
-     <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script> 
+    <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
     <script src="scripts/wow.min.js"></script>
     <script src="scripts/slick.min.js"></script>
     <script src="scripts/edit-item.js"></script>
-     </body>
- </html>
+</body>
+
+</html>

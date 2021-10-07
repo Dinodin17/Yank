@@ -1,83 +1,84 @@
+<!-- ЗАМОВИТИ АВТО -->
+<!DOCTYPE html>
+<html>
 
- <!-- ЗАМОВИТИ АВТО -->
- <!DOCTYPE html>
- <html>
-     <head>
-         <meta charset="utf-8">
-         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-         <title>Замовити авто</title>
-         <meta name="description" content="">
-         <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Замовити авто</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-         <link rel="preload" href="css/slick.css" as="style">
-         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style">
-         <link rel="preload" href="css/style.css" as="style">
-         <link rel="preload" href="scripts/auto-order.js" as="script">
+    <link rel="preload" href="css/slick.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="scripts/auto-order.js" as="script">
 
-         <link rel="stylesheet" href="css/slick.css"/>
-         <link rel="stylesheet" href="css/style.css">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-     </head>
-     <body>
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body id="block">
     <div class="auto-order">
-            <div class="header">
-                <div class="site-width">
-                    <a href="#" class="nav__link">
-                        <div class="logo"></div>
-                    </a>
-                    <div class="header_burger">
-                        <span></span>
-                    </div>
-                    <div class="header__wrap">
-                            
-                        <ul class="nav">
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Головна</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Аукціон</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Авто в Україні</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Калькулятор</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Ексклюзив</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Спецтехніка</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Запчастини</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Контакти</a>
-                            </li>
-                        </ul>
-                        <ul class="header__contact">
-                            <li class="header__contact-item">
-                                <a href="tel:" class="header__contact__link number">+3000000000</a>
-                            </li>
-                            <li class="header__contact-item">
-                                <a href="tel:" class="header__contact__link number">+3000000000</a>
-                            </li>
-                            <li class="header__contact-item">
-                                <a href="#" class="header__contact__link green">Відстежити авто</a>
-                            </li>
-                            <li class="header__contact-item">
-                                <a href="#" class="header__contact__link green">Замовити дзвінок</a>
-                            </li>
-                        </ul>
-                    </div>
+        <div class="header">
+            <div class="site-width">
+                <a href="#" class="nav__link">
+                    <div class="logo"></div>
+                </a>
+                <div class="header_burger">
+                    <span></span>
+                </div>
+                <div class="header__wrap">
+
+                    <ul class="nav">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Головна</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Аукціон</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Авто в Україні</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Калькулятор</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Ексклюзив</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Спецтехніка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Запчастини</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакти</a>
+                        </li>
+                    </ul>
+                    <ul class="header__contact">
+                        <li class="header__contact-item">
+                            <a href="tel:" class="header__contact__link number">+3000000000</a>
+                        </li>
+                        <li class="header__contact-item">
+                            <a href="tel:" class="header__contact__link number">+3000000000</a>
+                        </li>
+                        <li class="header__contact-item">
+                            <a href="#" class="header__contact__link green">Відстежити авто</a>
+                        </li>
+                        <li class="header__contact-item">
+                            <a href="#" class="header__contact__link green" id="callMe" onclick="myConsult()">Замовити дзвінок</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            
+        </div>
+
         <div class="auto-order__wrapper site-width">
             <div class="auto-order-slider-wrap">
                 <div class="auto-order__slider slider-for">
-                
+
                     <div class="auto-order__slide-for">
                         <img src="images/salon-item3.jpg" class="auto-order__img">
                     </div>
@@ -93,7 +94,7 @@
 
                 </div>
                 <div class="auto-order__slider-nav slider-nav">
-               
+
                     <div class="auto-order__slide-nav">
                         <img src="images/salon-item3.jpg" class="auto-order__img-nav">
                     </div>
@@ -106,19 +107,19 @@
                     <div class="auto-order__slide-nav">
                         <img src="images/salon-item.jpg" class="auto-order__img-nav">
                     </div>
-      
+
                 </div>
-                
+
             </div>
             <div class="auto-order__side-wrap">
                 <h1 class="auto-order__title">Range Rover Evoque 2021</h1>
                 <div class="date">
                     <span class="auto-order__price desc2">1000$</span>
-                    
-                        <div class="auto-buy galery">
-                            <a href="" class="auto-buy-button galery-button">Купити</a>
-                        </div>
-                    
+
+                    <div>
+                        <a href="" class="auto-buy-button">Купити</a>
+                    </div>
+
                 </div>
                 <div class="auto-order-charac">
                     <h3 class="auto-order__subtitle desc2">Характеристики</h3>
@@ -129,38 +130,37 @@
                                 <span class="auto-order-charac-item desc2">2017</span>
                             </div>
                             <div class="flex charac-item">
-                                <span class="icon-auto icon-motor"></span>
+                                <span class="icon-auto icon-gas-station"></span>
                                 <span class="auto-order-charac-item desc2">Бензин</span>
                             </div>
                             <div class="flex charac-item">
-                                <span class="icon-auto icon-gas-station"></span>
+                                <span class="icon-auto icon-speedometer"></span>
                                 <span class="auto-order-charac-item desc2">40 300 km</span>
                             </div>
                         </div>
                         <div>
                             <div class="flex charac-item">
-                                <span class=" icon-auto icon-calendar"></span>
+                                <span class="icon-auto icon-motor"></span>
                                 <span class="auto-order-charac-item desc2">1.6L</span>
                             </div>
                             <div class="flex charac-item">
-                                <span class="icon-auto icon-motor"></span>
+                                <span class="icon-auto icon-chassis"></span>
                                 <span class="auto-order-charac-item desc2">Повний</span>
                             </div>
                             <div class="flex charac-item">
-                                <span class="icon-auto icon-gas-station"></span>
+                                <span class="icon-auto icon-transmission"></span>
                                 <span class="auto-order-charac-item desc2">Автомат</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                    <h3 class="auto-order__subtitle desc2">Опис автомобіля</h3>
-                    <div class="auto-order__description desc">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque voluptatem nihil inventore! Officiis excepturi aliquam dolor eos voluptatibus, facilis veritatis cum itaque rerum laudantium hic quaerat nihil nemo molestiae iusto?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum beatae quas fugit nostrum fugiat praesentium nobis. Voluptatum quibusdam suscipit minima optio alias. Ipsa, impedit iure. Blanditiis earum nisi error minima!
-                    </div>
-                
-            </div>
+                <h3 class="auto-order__subtitle desc2">Опис автомобіля</h3>
+                <div class="auto-order__description desc">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque voluptatem nihil inventore! Officiis excepturi aliquam dolor eos voluptatibus, facilis veritatis cum itaque rerum laudantium hic quaerat nihil nemo molestiae iusto? Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Dolorum beatae quas fugit nostrum fugiat praesentium nobis. Voluptatum quibusdam suscipit minima optio alias. Ipsa, impedit iure. Blanditiis earum nisi error minima!
+                </div>
 
+            </div>
 
         </div>
 
@@ -192,11 +192,38 @@
                 </ul>
             </div>
         </div>
-       
+
     </div>
-    <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script> 
+    <!-- ПОП АП КОНСУЛЬТАЦИЯ -->
+    <div class="pop-up-concult" id="popupConsult">
+
+        <div class="pop-up-concult__wrapper" id="my-node">
+            <div class="close" id="close" onclick="Hide()">
+                <div class="close1"></div>
+                <div class="close2"></div>
+            </div>
+            <h2 class="pop-up-concult__title">Отримайте безкоштовну консультацію</h2>
+            <div class="pop-up-concult__desc">Залиште ваші контактні дані і наш менеджер зв'яжеться з Вами найближчим часов</div>
+            <form class="pop-up-concult__form">
+                <div class="pop-up-concult__subtitle">Ваше ім'я</div>
+                <input type="text" class="pop-up_input">
+
+                <div class="pop-up-concult__subtitle">Ваш телефон</div>
+                <input type="text" class="pop-up_input">
+
+                <input type="submit" value="Отримати консультацію" class="pop-up__button"></input>
+                <div class="pop-up-concult__data">
+                    Ваші дані захищені політикою конфіденційності
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
     <script src="scripts/wow.min.js"></script>
     <script src="scripts/slick.min.js"></script>
-         <script src="scripts/auto-order.js"></script>
-     </body>
- </html>
+    <script src="scripts/auto-order.js"></script>
+</body>
+
+</html>

@@ -25,7 +25,7 @@ $('.cool-input__input').on('input', function() {
 });
 
 // на клик белый шрифт кнопке
-var greenBut = document.querySelectorAll(".button");
+var greenBut = document.querySelectorAll(".but");
 
 [].forEach.call(greenBut, function(el) {
     el.addEventListener('click', function(e) {

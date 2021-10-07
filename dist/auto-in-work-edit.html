@@ -24,9 +24,10 @@
                 <div class="admin__header-name desc2">Максим</div>
             </div>
         </div>
-        <div class="admin-auto-in-work__button-add">
+        <h1 class="admin__title">Авто в роботі</h1>
+        <!-- <div class="admin-auto-in-work__button-add">
             <a href="#">Додати авто в роботі</a>
-        </div>
+        </div> -->
         <div class="auto-in-work-item__wrapper">
             <div class="admin__side-panel">
                 <ul class="side-panel__list">
@@ -70,122 +71,115 @@
                             </div>
                         </div>
                         <div>
-                            <ul class="auto-in-work-edit__list">
-                                <li class="auto-in-work-edit__item">
-                                    <input type="text" placeholder="Назва замовлення" class="auto-in-work-edit__input">
+                            <form class="auto-in-work-edit__list">
+                                <div class="contact__inputs-wrap">
+                                    <input required class="cool-input__input" />
+                                    <span class="cool-input__placeholder">Номер замовлення</span>
+                                </div>
 
-                                </li>
-                                <li class="auto-in-work-edit__item">
-                                    <input type="text" placeholder="Номер замовлення" class="auto-in-work-edit__input">
+                                <div class="contact__inputs-wrap">
+                                    <input required class="cool-input__input" />
+                                    <span class="cool-input__placeholder">Назва замовлення</span>
+                                </div>
+                                <div class="crm-lead-page__subtitle">Статус</div>
 
-                                </li>
-                                <li class="auto-in-work-edit__item">
-                                    <div class="crm-lead-page__subtitle">Статус</div>
-                                    <div class="crm-select-width">
-                                        <div class="cont_select_center">
-                                            <div class="select_mate" data-mate-select="active">
-                                                <select name="" onchange="" onclick="return false;" id="">
-                                        <option value=""  >Необроблено</option>
-                                        <option value="1">Оброблено</option>
-                                       
-                                    </select>
-                                                <p class="selecionado_opcion" onclick="open_select(this)"></p><span onclick="open_select(this)" class="icon_select_mate"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                                        <path d="M0-.75h24v24H0z" fill="none"/>
-                                    </svg></span>
-                                                <div class="cont_list_select_mate">
-                                                    <ul class="cont_select_int"> </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <select class="calculator1__select">
+                                    <option selected>Неактивно</option>
+                                    <option>Активно</option>
+                               </select>
 
-                                </li>
-                                <li class="auto-in-work-edit__item">
-                                    <input type="text" placeholder="Замовник" class="auto-in-work-edit__input">
+                                <div class="contact__inputs-wrap">
+                                    <input required class="cool-input__input" />
+                                    <span class="cool-input__placeholder">Замовник</span>
+                                </div>
 
-                                </li>
-                                <li class="auto-in-work-edit__item">
-                                    <input type="text" placeholder="Телефон" class="auto-in-work-edit__input">
-                                </li>
-                                <li class="auto-in-work-edit__item">
-                                    <input type="email" placeholder="Пошта" class="auto-in-work-edit__input">
-                                </li>
-                            </ul>
-                            <input type="submit" class="auto-in-work-item__button" value="Зберегти">
-                            </div>
-                        </div>
-                        <div class="date">
-                            <div class="auto-in-work-item__udate desc2">Оновлення</div>
-                            <input type="submit" class="auto-in-work-item__udate-but" value="Додати">
-                        </div>
-                        <div class="table__wrap">
-                            <form class="auto-in-work-item__tracking">
-                                <table class="auto-in-work-item__tracking-table">
-                                    <tbody>
-                                        <tr class="auto-in-work-item__tracking-list">
-                                            <td class="auto-in-work-item__tracking-item">Прибув в порт Одеси</td>
-                                            <td class="auto-in-work-item__tracking track-date">01.03.2021</td>
-                                            <td class="admin-autosalon__table-item-but">
-                                                <a href="#" class="admin-autosalon__table-button">Редагувати</a>
-                                            </td>
-                                            <td class="admin-autosalon__table-item-but">
-                                                <a href="#" class="admin-autosalon__table-button">Видалити</a>
-                                            </td>
-                                        </tr>
+                                <div class="contact__inputs-wrap">
+                                    <input required class="cool-input__input" />
+                                    <span class="cool-input__placeholder">Телефон</span>
+                                </div>
 
-                                        <tr class="auto-in-work-item__tracking-list">
-                                            <td class="auto-in-work-item__tracking-item">Прибув в порт Одеси</td>
-                                            <td class="auto-in-work-item__tracking track-date">01.03.2021</td>
-                                            <td class="admin-autosalon__table-item-but">
-                                                <a href="#" class="admin-autosalon__table-button">Редагувати</a>
-                                            </td>
-                                            <td class="admin-autosalon__table-item-but">
-                                                <a href="#" class="admin-autosalon__table-button">Видалити</a>
-                                            </td>
-                                        </tr>
-                                        <tr class="auto-in-work-item__tracking-list">
-                                            <td class="auto-in-work-item__tracking-item">Прибув в порт Одеси</td>
-                                            <td class="auto-in-work-item__tracking track-date">01.03.2021</td>
-                                            <td class="admin-autosalon__table-item-but">
-                                                <a href="#" class="admin-autosalon__table-button">Редагувати</a>
-                                            </td>
-                                            <td class="admin-autosalon__table-item-but">
-                                                <a href="#" class="admin-autosalon__table-button">Видалити</a>
-                                            </td>
-                                        </tr>
-
-
-                                        <tr class="auto-in-work-item__tracking-list">
-                                            <td class="auto-in-work-item__tracking-item">Прибув в порт Одеси</td>
-                                            <td class="auto-in-work-item__tracking track-date">01.03.2021</td>
-                                            <td class="admin-autosalon__table-item-but">
-                                                <a href="#" class="admin-autosalon__table-button">Редагувати</a>
-                                            </td>
-                                            <td class="admin-autosalon__table-item-but">
-                                                <a href="#" class="admin-autosalon__table-button">Видалити</a>
-                                            </td>
-                                        </tr>
-
-                                        <tr class="auto-in-work-item__tracking-list">
-                                            <td class="auto-in-work-item__tracking-item">Прибув в порт Одеси</td>
-                                            <td class="auto-in-work-item__tracking track-date">01.03.2021</td>
-                                            <td class="admin-autosalon__table-item-but">
-                                                <a href="#" class="admin-autosalon__table-button">Редагувати</a>
-                                            </td>
-                                            <td class="admin-autosalon__table-item-but">
-                                                <a href="#" class="admin-autosalon__table-button">Видалити</a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
+                                <div class="contact__inputs-wrap">
+                                    <input required class="cool-input__input" />
+                                    <span class="cool-input__placeholder">Пошта</span>
+                                </div>
                             </form>
+                            <button type="submit" class="auto-in-work-item__button">Зберегти</button>
+
                         </div>
+                    </div>
+                    <div class="date">
+                        <div class="auto-in-work-item__udate desc2">Оновлення</div>
+
+                        <button class="auto-in-work-item__udate-but">Додати</button>
+                    </div>
+                    <div class="table__wrap">
+                        <form class="auto-in-work-item__tracking">
+                            <table class="auto-in-work-item__tracking-table">
+                                <tbody>
+                                    <tr class="auto-in-work-item__tracking-list">
+                                        <td class="auto-in-work-item__tracking-item">Прибув в порт Одеси</td>
+                                        <td class="auto-in-work-item__tracking track-date">01.03.2021</td>
+                                        <td class="admin-autosalon__table-item-but">
+                                            <a href="#" class="admin-orders__table-button">Редагувати</a>
+                                        </td>
+                                        <td class="admin-autosalon__table-item-but">
+                                            <a href="#" class="admin-orders__table-button">Видалити</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="auto-in-work-item__tracking-list">
+                                        <td class="auto-in-work-item__tracking-item">Прибув в порт Одеси</td>
+                                        <td class="auto-in-work-item__tracking track-date">01.03.2021</td>
+                                        <td class="admin-autosalon__table-item-but">
+                                            <a href="#" class="admin-orders__table-button">Редагувати</a>
+                                        </td>
+                                        <td class="admin-autosalon__table-item-but">
+                                            <a href="#" class="admin-orders__table-button">Видалити</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="auto-in-work-item__tracking-list">
+                                        <td class="auto-in-work-item__tracking-item">Прибув в порт Одеси</td>
+                                        <td class="auto-in-work-item__tracking track-date">01.03.2021</td>
+                                        <td class="admin-autosalon__table-item-but">
+                                            <a href="#" class="admin-orders__table-button">Редагувати</a>
+                                        </td>
+                                        <td class="admin-autosalon__table-item-but">
+                                            <a href="#" class="admin-orders__table-button">Видалити</a>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr class="auto-in-work-item__tracking-list">
+                                        <td class="auto-in-work-item__tracking-item">Прибув в порт Одеси</td>
+                                        <td class="auto-in-work-item__tracking track-date">01.03.2021</td>
+                                        <td class="admin-autosalon__table-item-but">
+                                            <a href="#" class="admin-orders__table-button">Редагувати</a>
+                                        </td>
+                                        <td class="admin-autosalon__table-item-but">
+                                            <a href="#" class="admin-orders__table-button">Видалити</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="auto-in-work-item__tracking-list">
+                                        <td class="auto-in-work-item__tracking-item">Прибув в порт Одеси</td>
+                                        <td class="auto-in-work-item__tracking track-date">01.03.2021</td>
+                                        <td class="admin-autosalon__table-item-but">
+                                            <a href="#" class="admin-orders__table-button">Редагувати</a>
+                                        </td>
+                                        <td class="admin-autosalon__table-item-but">
+                                            <a href="#" class="admin-orders__table-button">Видалити</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </form>
                     </div>
                 </div>
             </div>
-            <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
-            <script src="scripts/admin-script.js"></script>
+        </div>
+        <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+        <script src="scripts/admin-script.js"></script>
 </body>
 
 </html>
