@@ -117,6 +117,12 @@ textarea:focus {
   overflow: hidden;
 }
 
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+}
+
 @font-face {
   font-family: 'MyriadPro-Bold';
   src: url("../fonts/MyriadPro-Bold.eot");
@@ -1213,9 +1219,9 @@ body {
 }
 
 .salon__image:hover {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .salon__subtitle {
@@ -2369,9 +2375,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .crm-lead-page__button {
@@ -2382,7 +2387,33 @@ body {
   font-family: 'Play';
   font-size: 22px;
   cursor: pointer;
-  margin-left: 15px;
+  height: 40px;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.crm-lead-page__button:hover {
+  background-color: #6dd14e;
+  color: black;
+}
+
+.crm-lead-page__add {
+  border-radius: 2px;
+  padding: 3px 19px 4px;
+  background-color: #6dd14e;
+  color: black;
+  font-family: 'Play';
+  font-size: 22px;
+  cursor: pointer;
+  height: 40px;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.crm-lead-page__add:hover {
+  background-color: #96d382;
 }
 
 .lead {
@@ -2394,8 +2425,17 @@ body {
   overflow-y: scroll;
 }
 
-.crm-select-width {
-  width: 230px;
+.crm-lead-page__item {
+  margin-bottom: 25px;
+}
+
+.crm-select-wrap {
+  position: relative;
+  width: 250px;
+}
+
+.crm-data-picker {
+  width: 250px;
 }
 
 .edit-item {
@@ -2509,6 +2549,7 @@ body {
   font-family: 'Play';
   font-size: 22px;
   cursor: pointer;
+  height: 40px;
   margin-right: 15px;
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -3410,7 +3451,7 @@ body {
   background-color: #6dd14e;
   padding: 6px 10px 5px;
   cursor: pointer;
-  z-index: 10;
+  z-index: 100;
 }
 
 .auto-cell {
@@ -3651,7 +3692,7 @@ body {
 }
 
 .tracking__item-form {
-  width: 53%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -3999,6 +4040,7 @@ body {
 
 .get-auto__subtitle {
   font-size: 20px;
+  margin-bottom: 3px;
 }
 
 .get-auto__form {
@@ -4011,11 +4053,24 @@ body {
           flex-direction: column;
 }
 
-.get-auto__input {
-  padding: 5px 10px 5px;
+.get-auto__form .contact__inputs-wrap {
+  background-color: #eeeeee;
+  border-radius: 0;
+}
+
+.get-auto__item {
+  margin-bottom: 20px;
+}
+
+.get-auto__wrap {
+  position: relative;
+}
+
+.get-auto__select {
   background-color: #eeeeee;
   height: 35px;
-  margin-bottom: 15px;
+  width: 100%;
+  padding: 3px 4px 3px;
 }
 
 .data {
@@ -4057,6 +4112,18 @@ body {
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
   background-color: #000000;
+}
+
+.get-auto__input {
+  /* HIDE RADIO */
+  visibility: hidden;
+  /* Makes input not-clickable */
+  position: absolute;
+  /* Remove input from document flow */
+}
+
+label > input:checked + div {
+  border: 2px solid #6dd14e;
 }
 
 .show {

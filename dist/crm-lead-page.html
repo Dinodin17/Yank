@@ -11,7 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" href="css/style.css" as="style">
     <link rel="preload" href="scripts/admin-crm.js" as="script">
+    <link rel="preload" href="css/datetimepicker.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="css/datetimepicker.css" rel="stylesheet">
 
 </head>
 
@@ -90,23 +93,12 @@
                             <ul class="crm-lead-page__list-right">
                                 <li class="crm-lead-page__item">
                                     <div class="crm-lead-page__subtitle">Статус</div>
-                                    <div class="crm-select-width">
-                                        <div class="cont_select_center">
-                                            <div class="select_mate" data-mate-select="active">
-                                                <select name="" onchange="" onclick="return false;" id="">
-                                            <option value=""  >Необроблено</option>
-                                            <option value="1">Оброблено</option>
-                                           
+                                    <div class="crm-select-wrap">
+                                        <span class="icon-caret-down-solid"></span>
+                                        <select class="filter__select">
+                                            <option>Необроблено</option>
+                                            <option>Оброблено</option>
                                         </select>
-                                                <p class="selecionado_opcion" onclick="open_select(this)"></p><span onclick="open_select(this)" class="icon_select_mate"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                                            <path d="M0-.75h24v24H0z" fill="none"/>
-                                        </svg></span>
-                                                <div class="cont_list_select_mate">
-                                                    <ul class="cont_select_int"> </ul>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </li>
 
@@ -120,12 +112,23 @@
                                         <form>
                                             <textarea class="crm-lead-page__textarea">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae modi architecto nisi culpa tempore enim sed deleniti natus beatae quos incidunt ab, ea nesciunt labore? Voluptatum, temporibus consectetur! Nesciunt, quod.</textarea>
                                         </form>
+                                        <button type="submit" class="crm-lead-page__add">Додати</button>
                                     </div>
                                 </li>
+                                <li class="crm-lead-page__item">
+                                    <div class="crm-lead-page__subtitle">Зателофонувати/написати</div>
+                                    <div class="crm-data-picker">
+                                        <div id="picker"></div>
+                                        <input type="hidden" id="result" value="" />
+                                    </div>
+
+                                </li>
+
+
                             </ul>
                             <div class="crm-lead-page__buttons">
-                                <a href="" class="crm-lead-page__button">Видалити</a>
-                                <a href="" class="crm-lead-page__button">Зберегти</a>
+                                <button class="crm-lead-page__button">Видалити</button>
+                                <button class="crm-lead-page__button save">Зберегти</button>
                             </div>
                         </div>
 
@@ -190,6 +193,9 @@
     </div>
     <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
     <script src="scripts/admin-crm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous"></script>
+    <script src="scripts/datetimepicker.js"></script>
+
 </body>
 
 </html>
