@@ -196,7 +196,6 @@ popupClose.addEventListener('click', function(event) {
     }
 });
 
-// var applyBut = document.getElementById
 
 
 // // ЗАКРЫТИЕ НА КЛИК ВНЕ НАВИГАЦИИ
