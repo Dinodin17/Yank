@@ -127,20 +127,20 @@ swiper.on('slideChange', function() {
 //Кнопки активные/неактывные
 
 // на клик белый шрифт кнопке
-var greenBut = document.querySelectorAll(".button");
+// var greenBut = document.querySelectorAll(".button");
 
-[].forEach.call(greenBut, function(el) {
-    el.addEventListener('click', function(e) {
-        el.classList.add('active');
-    })
-});
+// [].forEach.call(greenBut, function(el) {
+//     el.addEventListener('click', function(e) {
+//         el.classList.add('active');
+//     })
+// });
 
-var green = document.querySelectorAll(".green");
-[].forEach.call(green, function(el) {
-    el.addEventListener('click', function(e) {
-        el.classList.add('active-link');
-    })
-});
+// var green = document.querySelectorAll(".green");
+// [].forEach.call(green, function(el) {
+//     el.addEventListener('click', function(e) {
+//         el.classList.add('active-link');
+//     })
+// });
 
 const screenWidth = window.screen.width;
 console.log(screenWidth);

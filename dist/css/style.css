@@ -5071,7 +5071,7 @@ label > input:checked + div {
   }
 
   .banner__button {
-    left: calc(50% - (210px/2));
+    left: calc(50% - (200px/2));
     top: 90%;
   }
 
@@ -5081,7 +5081,6 @@ label > input:checked + div {
 
   .slider {
     max-width: 90%;
-    background: url(../images/backmob.png) center center;
     background-size: 90% 60%;
     background-repeat: no-repeat;
   }
@@ -5339,14 +5338,87 @@ label > input:checked + div {
   }
 
   .information__wrap {
-    height: 80%;
-    width: 60%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 65%;
     padding: 25px 30px 15px;
   }
 
   .yank {
     width: 50%;
     z-index: 0;
+  }
+
+  .social {
+    height: 120vh;
+  }
+
+  .social__title {
+    margin: 30px 0 20px 20px;
+  }
+
+  .social__wrap {
+    margin-top: 60vh;
+  }
+
+  .social__wrap1 {
+    top: 5%;
+  }
+
+  .social .social__image-wrap {
+    height: 25vh;
+    width: 83%;
+  }
+
+  .social .social__image-wrap2 {
+    height: 25vh;
+    width: 62%;
+  }
+
+  .social__background1 {
+    height: 25vh;
+    width: 70%;
+    top: 65%;
+  }
+
+  .social__background2 {
+    height: 25vh;
+    width: 85%;
+  }
+
+  .social .img-wrap2 {
+    top: 10%;
+  }
+
+  .social .inst-description {
+    position: absolute;
+    bottom: 5%;
+    width: 85%;
+    right: 5%;
+  }
+
+  .social .telegram-description {
+    width: 85%;
+    position: absolute;
+    left: 5%;
+    top: 43%;
+  }
+
+  .social .tel__subtitle {
+    margin-top: calc(25vh - 40px);
+    width: 74%;
+    height: 40px;
+    padding-left: 30px;
+    font-size: 26px;
+  }
+
+  .social .inst__subtitle {
+    margin-top: calc(25vh - 40px);
+    width: 64%;
+    height: 40px;
+    padding-right: 40px;
+    font-size: 26px;
   }
 
   .salon {
@@ -5390,7 +5462,6 @@ label > input:checked + div {
   .salon__item {
     width: 200px;
     max-width: unset;
-    width: 55vw;
     margin: 10px 0 10px;
   }
 
@@ -5570,6 +5641,112 @@ label > input:checked + div {
 }
 
 @media screen and (max-width: 480px) {
+  .banner {
+    margin-top: 0;
+    height: 100vh;
+  }
+
+  .banner .swiper-container {
+    top: 0;
+  }
+
+  .banner__button {
+    text-align: center;
+    width: 200px;
+    font-size: 22px !important;
+    white-space: pre-wrap;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    top: 90%;
+  }
+
+  .banner .slider__about-description {
+    height: unset;
+    margin: 110px auto 20px;
+  }
+
+  .banner .slider__item {
+    top: 0;
+    height: 100vh !important;
+  }
+
+  .banner .slider__item-cars {
+    background: url(../images/backmob.png) center center;
+    background-size: 90% 50%;
+    background-repeat: no-repeat;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .banner .slider__item-about {
+    background: url(../images/mobabout.jpg) center center;
+    background-size: 90% 50%;
+    background-repeat: no-repeat;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .banner .slider__item-exclusive {
+    background: url(../images/mobexclusiveto.jpg) center center;
+    background-size: 90% 50%;
+    background-repeat: no-repeat;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .banner .slider__item-special {
+    background: url(../images/mobspecial.jpg) center center;
+    background-size: 90% 50%;
+    background-repeat: no-repeat;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .banner .slider .car-name {
+    white-space: normal;
+    width: 55%;
+  }
+
+  .banner .swiper-button-prev,
+  .banner .swiper-button-next {
+    top: 91%;
+  }
+
+  .banner .available-car__wrapper {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .slider__img {
+    margin: 50% auto 0;
+    width: 90%;
+  }
+
+  .available-car,
+  .spare-parts-banner-image {
+    width: 100% !important;
+  }
+
+  .slider .available-title {
+    bottom: 15px;
+    left: unset;
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .slider .spare-parts-title {
+    bottom: 15px;
+    left: unset;
+    width: 100%;
+    font-size: 24px;
+  }
+
   .benefits__list {
     margin: 15% 0 15%;
     width: 80%;
@@ -5596,6 +5773,86 @@ label > input:checked + div {
 
   .desc2 {
     font-size: calc(15px + 16*(100vw/1920));
+  }
+}
+
+@media (max-width: 480px) {
+  .auctions {
+    height: 70vh;
+  }
+
+  .auctions .item__title {
+    display: none;
+  }
+
+  .auctions__title {
+    margin-bottom: 2%;
+    font-size: 18px;
+  }
+
+  .auctions .bold {
+    font-size: 36px;
+  }
+
+  .auctions__image {
+    height: 6vh;
+  }
+
+  .auctions__image2 {
+    right: 0;
+    margin-bottom: 17%;
+  }
+
+  .auctions__image3 {
+    right: 0;
+    margin-bottom: 17%;
+  }
+
+  .auctions__image4 {
+    left: 0;
+    margin-top: 17%;
+  }
+
+  .auctions__image5 {
+    left: 7%;
+    margin-top: 17%;
+    height: 4vh;
+  }
+
+  .auctions__item1 {
+    border-right: 45px solid transparent;
+    width: 95%;
+    border-top: 14vh solid #000a00;
+  }
+
+  .auctions__item2 {
+    margin-top: 4vh;
+    border-right: 45px solid transparent;
+    width: 56%;
+    border-top: 14vh solid #000a00;
+  }
+
+  .auctions__item3 {
+    margin-top: 4vh;
+    border-right: 45px solid transparent;
+    width: 43%;
+    border-top: 14vh solid #000a00;
+  }
+
+  .auctions__item4 {
+    border-left: 45px solid transparent;
+    top: -28vh;
+    right: -48%;
+    width: 53%;
+    border-bottom: 14vh solid #000a00;
+  }
+
+  .auctions__item5 {
+    border-left: 45px solid transparent;
+    top: -24vh;
+    right: -35%;
+    width: 65%;
+    border-bottom: 14vh solid #000a00;
   }
 }
 
@@ -5627,6 +5884,20 @@ label > input:checked + div {
     width: 100%;
     height: 125%;
     margin-top: 0px;
+  }
+}
+
+@media (max-width: 320px) {
+  .social {
+    height: 130vh;
+  }
+
+  .social__wrap {
+    margin-top: 65vh;
+  }
+
+  .social .telegram-description {
+    top: 44%;
   }
 }
 
